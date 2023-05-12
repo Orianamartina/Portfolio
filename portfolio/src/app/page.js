@@ -1,95 +1,84 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client'
+import style from './page.module.css'
+import Home from './components/home/Home'
+import NavBar from './components/navBar/NavBar'
+import Projects from './components/projects/projects'
+import AboutMe from './components/about me/AboutMe'
+import { useState } from 'react'
+import {motion, AnimatePresence } from 'framer-motion'
+import Stack from './components/Stack/Stack'
+import Contact from './components/contact/Contact'
 
-export default function Home() {
+
+export default function Main() {
+
+  const [selectedComponent, setSelectedComponent] = useState('home');
+
+
+  const handleComponentClick = (componentId)=>{
+    setSelectedComponent(componentId);
+
+  }
+
+  const transitionVariants = {
+    enter: {
+      opacity: 0,
+      x: 50,
+      overflow: 'hidden'
+    },
+    center: {
+      opacity: 1,
+      x: 0,
+    },
+    exit: {
+      opacity: 0,
+      x: -50,
+    },
+  };
+  
+  const renderComponent = (componentId) => {
+    switch (componentId) {
+      case 'home':
+        return <Home />;
+      case 'aboutMe':
+        return <AboutMe />;
+      case 'projects':
+        return <Projects />;
+      case 'stack':
+        return <Stack />
+      case 'contact':
+        return <Contact />
+      default:
+        return null;
+    }
+  };
+
+     const components = [
+        { name: 'Home', id: 'home' },
+        { name: 'AboutMe', id: 'aboutMe' },
+        { name: 'Projects', id: 'projects' },
+        { name: 'Stack', id: 'stack'},
+        { name: 'Contact', id: 'contact'},
+      ];
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main >
+      <NavBar handleComponentClick={handleComponentClick} selectedComponent={selectedComponent} components={components}/>
+      <AnimatePresence>
+        {components.map((component) => (
+          <motion.div
+            key={component.id}
+            variants={transitionVariants}
+            initial="enter"
+            animate={selectedComponent === component.id ? 'center' : 'exit'}
+            exit="exit"
+            onExitComplete={() => window.scrollTo(0, 0)}
+            className={style.motionDiv}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+            {selectedComponent === component.id && renderComponent(component.id)}
+          </motion.div>
+        ))}
+      </AnimatePresence>
+      
     </main>
   )
 }
