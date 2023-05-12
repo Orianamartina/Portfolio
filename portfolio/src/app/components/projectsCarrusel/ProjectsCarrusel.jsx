@@ -1,7 +1,7 @@
 "use Client"
 import styles from "./projectsCarrusel.module.css"
 import { useState } from "react"
-export default function(props){
+export default function ProjectsCarrusel(props){
     
     
 

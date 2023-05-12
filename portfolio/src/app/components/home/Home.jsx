@@ -2,7 +2,7 @@
 import style from "./home.module.css"
 import Image from "next/image"
 import picture from "./oriana.png"
-export default function(){
+export default function  Home(){
 
     return(
         <div className={style.container}>

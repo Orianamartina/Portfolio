@@ -1,6 +1,6 @@
 import styles from "./stack.module.css"
 
-export default function(){
+export default function Stack(){
  
     return(
         <div className={styles.container}>

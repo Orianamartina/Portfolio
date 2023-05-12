@@ -1,5 +1,5 @@
 
-export default function(props){
+export default function NavBar(props){
 
     const selectedComponent = props.selected
     const components = props.components

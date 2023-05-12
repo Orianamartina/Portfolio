@@ -1,6 +1,6 @@
 import styles from "./projects.module.css"
 
-export default function(){
+export default function Projects(){
  
     return(
         <div className={styles.container}>
