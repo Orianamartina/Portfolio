@@ -2,7 +2,7 @@
 import style from './page.module.css'
 import Home from './components/home/Home'
 import NavBar from './components/navBar/NavBar'
-import Projects from './components/projects/projects'
+import Projects from './components/projects/Projects'
 import AboutMe from './components/about me/AboutMe'
 import { useState } from 'react'
 import {motion, AnimatePresence } from 'framer-motion'
