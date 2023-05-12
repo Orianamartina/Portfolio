@@ -1,4 +1,4 @@
-import oriana from "./Oriana.png"
+
 import style from "./home.module.css"
 import Image from "next/image"
 import picture from "./oriana.png"
