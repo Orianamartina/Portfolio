@@ -54,11 +54,11 @@ export default function Main() {
   };
 
      const components = [
-        { name: 'Home', id: 'home', key:1 },
-        { name: 'AboutMe', id: 'aboutMe', key:2 },
-        { name: 'Projects', id: 'projects', key:3 },
-        { name: 'Stack', id: 'stack', key:4},
-        { name: 'Contact', id: 'contact', key: 5},
+        { name: 'Home', id: 'home' },
+        { name: 'AboutMe', id: 'aboutMe' },
+        { name: 'Projects', id: 'projects' },
+        { name: 'Stack', id: 'stack'},
+        { name: 'Contact', id: 'contact'},
       ];
   return (
     <main >

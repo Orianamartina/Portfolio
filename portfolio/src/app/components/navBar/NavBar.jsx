@@ -12,7 +12,7 @@ export default function NavBar(props){
                         return(
                         <button className={selectedComponent === component.id ? 'active' : ''}
                                 onClick={() => props.handleComponentClick(component.id)}
-                                //key={component.id}
+                                key={component.id}
                                 >
                             {component.name}
                         </button>
