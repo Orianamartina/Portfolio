@@ -24,36 +24,22 @@ export default function Projects(){
         name: "DogHub",
         description: "dsjasdjasoida"
     }
- 
-    const imagesDogHub = [
-        {img: dogHub1, id: 1},
-        {img: dogHub2, id: 2},
-        {img: dogHub3, id: 3},
-        {img: dogHub4, id: 4},
-        {img: dogHub5, id: 5},
-        {img: dogHub6, id: 6},
-    ]
-    const imagesSudoku = [
-        {img: sudoku1, id: 1},
-        {img: sudoku2, id: 2}
-    ]
+    const sudokuMobile = {
+        img: sudoku2,
+        name: "Sudoku Mobile",
+        description: "sudokuMobile"
+    }
+  
     return(
         <div className={styles.container}>
 
             <h1>Previous Projects</h1>
 
             <ProjectCard project = {sudoku} /> 
+            <ProjectCard project = {sudokuMobile} />
             <ProjectCard project = {dogHub} />
 
-            <h2>Sudoku</h2>
-            <img src={sudoku1.src} alt="" />
-            <h2>Sudoku Mobile</h2>
-            <img src={sudoku2.src} alt="" />
-            <h2>ElectroShop</h2>
 
-            <h2>DogHub</h2>
-            <ProjectsCarrusel images = {imagesDogHub} />
-            
             
             
         </div>

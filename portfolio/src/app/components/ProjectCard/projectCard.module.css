@@ -8,57 +8,81 @@
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
-
+    width: 100%;
+}
+.hiddenInfo{
+    opacity: 0;
+    margin-top: 10%;
+    transform: translateX(-50%);
+    transition: all 1s ease;
+    width: 100%;
+    z-index: 1
 }
 
+.showInfo{
+    opacity: 1;
+    margin-top: 10%;
+    transition: all 1s ease;
+    width: 100%;
+    z-index: 1
+
+  
+}
+.titleAndImage{
+    width: 25vw;
+
+}
+.titleAndImageClicked{
+    width: 25vw;
+    
+}
 
 .unClickedImg{
+    position: relative;
     margin-left: 30%;
     width: 25vw;
     height: 20vw;
     object-fit: cover;
- 
     cursor: pointer;
     opacity: 0.9;
     border-radius: 5px;
     transition: all 1s ease;
+    z-index: 2
 }
 .unClickedImg:hover{
     opacity: 1;
+    width: 27vw;
+    height: 22vw;
     box-shadow: 5px 5px 5px white;
 }   
-.clickedImg{
-     margin-left: 0%;
+
+.overlayText{
+    position: relative;
+    height: 20vw;
+    width: 25vw;
+    transform: translateY();
+    z-index: 3
+}
+.clickedImg{ 
+    
+    margin-left: 0%;
     width: 25vw;
     height: 20vw;
     object-fit: cover;
-   
     border-radius: 5px;
     box-shadow: 0;
     transition: all 1s ease;
     cursor: pointer;
+    z-index: 2
 }
-.shownInfo{
-    opacity: 1;
-    transition: all 1s ease;
-    width: 100%;
-    margin-left: 5%
-  
-}
-.hiddenInfo{
-    opacity: 0;
-    transition: opacity 1s ease;
-    width: 100%;
-    margin-left: 5%
 
 
-}
 .clickedTitle{
     margin-left: 0%;
     transition: all 1s ease;
 }
 .unClickedTitle{
-    margin-left: 50%;
+    margin-left: 60%;
     transition: all 1s ease;
 }
 .clickedSpace{
