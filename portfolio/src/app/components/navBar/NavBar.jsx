@@ -3,7 +3,6 @@ export default function NavBar(props){
 
     const selectedComponent = props.selected
     const components = props.components
-    console.log(components)
       //technology stack, contact
     return(
         <div>

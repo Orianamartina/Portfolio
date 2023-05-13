@@ -1,0 +1,70 @@
+.container{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+.allInfoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+
+.unClickedImg{
+    margin-left: 30%;
+    width: 25vw;
+    height: 20vw;
+    object-fit: cover;
+ 
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+.unClickedImg:hover{
+    opacity: 1;
+    box-shadow: 5px 5px 5px white;
+}   
+.clickedImg{
+     margin-left: 0%;
+    width: 25vw;
+    height: 20vw;
+    object-fit: cover;
+   
+    border-radius: 5px;
+    box-shadow: 0;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.shownInfo{
+    opacity: 1;
+    transition: all 1s ease;
+    width: 100%;
+    margin-left: 5%
+  
+}
+.hiddenInfo{
+    opacity: 0;
+    transition: opacity 1s ease;
+    width: 100%;
+    margin-left: 5%
+
+
+}
+.clickedTitle{
+    margin-left: 0%;
+    transition: all 1s ease;
+}
+.unClickedTitle{
+    margin-left: 50%;
+    transition: all 1s ease;
+}
+.clickedSpace{
+    width: 5%;
+}
+.unClickedSpace{
+    width: 5%;
+}
+
