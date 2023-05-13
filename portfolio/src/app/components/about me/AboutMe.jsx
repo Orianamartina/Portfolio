@@ -6,7 +6,7 @@ export default function AboutMe(){
             <h2>About Me</h2>
             <p>
                 
-                I'm a driven and enthusiastic Full-Stack Developer currently pursuing my Bachelor's degree in Computer Science at the National University of Quilmes. With a strong passion for programming, computer science, and languages, 
+                I&apos;m a driven and enthusiastic Full-Stack Developer currently pursuing my Bachelor&apos;s degree in Computer Science at the National University of Quilmes. With a strong passion for programming, computer science, and languages, 
                 I am eager to contribute my skills and knowledge to the world of software development.
 
                 Throughout my journey, I have gained valuable experience in working on diverse projects using a wide range of technologies. I am proficient in languages such as JavaScript, and Python,
