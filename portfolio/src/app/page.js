@@ -24,7 +24,9 @@ export default function Main() {
     enter: {
       opacity: 0,
       x: 50,
-      overflow: 'hidden'
+      overflow: 'hidden',
+
+      
     },
     center: {
       opacity: 1,
@@ -55,7 +57,7 @@ export default function Main() {
 
      const components = [
         { name: 'Home', id: 'home' },
-        { name: 'AboutMe', id: 'aboutMe' },
+        { name: 'About Me', id: 'aboutMe' },
         { name: 'Projects', id: 'projects' },
         { name: 'Stack', id: 'stack'},
         { name: 'Contact', id: 'contact'},
@@ -73,6 +75,7 @@ export default function Main() {
             exit="exit"
             onExitComplete={() => window.scrollTo(0, 0)}
             className={style.motionDiv}
+            transition={{ duration: 0.5 }}
           >
             {selectedComponent === component.id && renderComponent(component.id)}
           </motion.div>

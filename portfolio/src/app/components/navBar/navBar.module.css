@@ -1,0 +1,35 @@
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+  
+}
+.active{
+    text-decoration: underline;
+    font-size: 1.3vw;
+    margin: 2%;
+    padding: 1%;
+    background-color: var(--3);
+    border: none;
+    color: var(--0);
+    font-weight: 700;
+    
+    
+}
+
+.notActive{
+    background-color: var(--3);
+    border: none;
+  
+    font-size: 1.3vw;
+    
+    margin: 2%;
+    padding: 1%;
+  
+    color: var(--0)
+    
+
+}

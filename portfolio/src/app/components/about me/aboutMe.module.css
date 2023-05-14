@@ -1,0 +1,21 @@
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: var(--3);
+    padding: 1%;
+    border: 1vw solid var(--5);
+    box-shadow: 2vw 2vw var(--4);
+    border-radius: 15px;
+    
+ 
+}
+.title{
+    color: var(--0)
+}
+.paragraph{
+    font-size: 1.3vw;
+    color: var(--0);
+}

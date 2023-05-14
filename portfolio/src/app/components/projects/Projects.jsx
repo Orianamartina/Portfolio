@@ -1,11 +1,8 @@
-import ProjectsCarrusel from "../projectsCarrusel/ProjectsCarrusel"
-import styles from "./projects.module.css"
-import dogHub2 from "../../../../public/dogHub.png"
+
+import style from "./projects.module.css"
+
 import dogHub1 from "../../../../public/dogHub1.png"
-import dogHub3 from "../../../../public/dogHub2.png"
-import dogHub4 from "../../../../public/dogHubMobile.png"
-import dogHub5 from "../../../../public/dogHubMobile1.png"
-import dogHub6 from "../../../../public/dogHubMobile2.png"
+
 
 import sudoku1 from "../../../../public/Sudoku.png"
 import sudoku2 from "../../../../public/SudokuMobile.png"
@@ -17,23 +14,28 @@ export default function Projects(){
     const sudoku = {
         img: sudoku1,
         name: "Sudoku",
-        description: "dahdisaudai"
+        description: "Sudoku SPA made in React. Accessible for wider screens, interactive interface, keyboard support, game state management, different styles depending on the user's preference.",
+        url: "https://sudoku-prueba.vercel.app"
+    }
+
+    const sudokuMobile = {
+        img: sudoku2,
+        name: "Sudoku Mobile",
+        description: "Sudoku SPA made in react. Accessible for smaller screens, interactive interface with number selection buttons for touch screens, game state management, different styles depending on the user's preference.",
+        url: "https://sudoku-prueba.vercel.app"
     }
     const dogHub = {
         img: dogHub1,
         name: "DogHub",
-        description: "dsjasdjasoida"
+        description: "Dog breed searching SPA. Responsive. Search your favorite breeds, sort them or filter them by the given options, find all their information, or create a new one.",
+        url: "https://proyecto-individual-henry.vercel.app"
     }
-    const sudokuMobile = {
-        img: sudoku2,
-        name: "Sudoku Mobile",
-        description: "sudokuMobile"
-    }
+   
   
     return(
-        <div className={styles.container}>
+        <div className={style.container}>
 
-            <h1>Previous Projects</h1>
+            <h1 className={style.title}>Previous Projects</h1>
 
             <ProjectCard project = {sudoku} /> 
             <ProjectCard project = {sudokuMobile} />
