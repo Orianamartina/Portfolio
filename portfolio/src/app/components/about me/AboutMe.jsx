@@ -1,9 +1,12 @@
 import style from "./aboutMe.module.css"
+
 export default function AboutMe(){
 
     return(
         <div className={style.container}>
+          
             <h2 className={style.title}>About Me</h2>
+            
             <p className={style.paragraph}>
                 
                 I&apos;m a driven and enthusiastic Full-Stack Developer currently pursuing my Bachelor&apos;s degree in Computer Science at the National University of Quilmes. With a strong passion for programming, computer science, and languages, 

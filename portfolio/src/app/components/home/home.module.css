@@ -1,9 +1,15 @@
 .container{
-    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+   
 
 }
 
 .oriana{
-    height: 30%;
-    width: 30%;
+    height: 70%;
+    width: 50%;
+    object-fit: cover;
+    object-position: top;
+    filter: grayscale(0.6);
 }
