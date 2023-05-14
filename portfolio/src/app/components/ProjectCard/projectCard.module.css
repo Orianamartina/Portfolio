@@ -24,14 +24,15 @@
 }
 .showInfo{
     opacity: 1;
-    margin-top: 10%;
+    margin-top: 11%;
     transition: all 1s ease;
     width: 100%;
     z-index: 1;
-   
+    border-radius: 0 30px 30px 0;
+    padding: 3%;
+    font-size: 1.3vw;
+    color: var(--0);
 
-
-  
 }
 .titleAndImage{
     width: 25vw;
@@ -45,7 +46,17 @@
     transition: all 1s ease;
     z-index: 2
 }
+.linkButton{
+    text-decoration: none;
+    font-size: 1.3vw;
+    padding: 1%;
+    color: var(--0);
 
+}
+.linkButton:hover{
+
+    text-decoration: underline;
+}
 .unClickedImg{
     position: relative;
     width: 25vw;
@@ -56,7 +67,8 @@
     border-radius: 5px;
     transition: all 1s ease;
     object-position: top;
-    z-index: 2
+    z-index: 2;
+    border: 5px solid var(--1);
 }
 .unClickedImg:hover{
     opacity: 1;
@@ -66,17 +78,19 @@
 
 
 .clickedImg{ 
-    
+    border: 2px solid var(--1);
     margin-left: 0%;
     width: 25vw;
     height: 20vw;
     object-fit: cover;
 
     border-radius: 5px;
-    box-shadow: 0;
+    box-shadow: -3vw 3vw var(--1);
     transition: all 1s ease;
     cursor: pointer;
-    z-index: 3
+    z-index: 3;
+
+    
 }
 
 .title{

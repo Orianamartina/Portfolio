@@ -4,7 +4,7 @@ export default function AboutMe(){
 
     return(
         <div className={style.container}>
-          
+             <div className={style.circle}></div>
             <h2 className={style.title}>About Me</h2>
             
             <p className={style.paragraph}>

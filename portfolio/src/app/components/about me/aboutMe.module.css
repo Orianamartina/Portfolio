@@ -20,3 +20,15 @@
     font-size: 1.3vw;
     color: var(--0);
 }
+.circle {
+    position: absolute; 
+    transform: translateY(7vw) translateX(68.8vw);
+    top: 0;
+    left: 0;
+    width: 30vw; /* Set the circle's width and height to match the image's dimensions */
+    height: 40vw;
+    border-radius: 40vw 0 0 40vw;
+    background-color: var(--2); /* Adjust the background color and transparency */
+    z-index: -1; /* Push the circle behind the image */
+    transition: 1s;
+}

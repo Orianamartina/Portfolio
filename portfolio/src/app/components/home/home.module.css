@@ -1,15 +1,71 @@
 .container{
     display: flex;
     flex-direction: row;
+    height: fit-content;
+    justify-content: space-between;
     height: 100%;
-   
+
 
 }
 
 .oriana{
-    height: 70%;
-    width: 50%;
+    height: 40vw;
+    width: 30vw;
     object-fit: cover;
     object-position: top;
     filter: grayscale(0.6);
+    filter: drop-shadow(5px 5px 5px var(--5));
+    border-radius: inherit;
+    margin-right: 0;
+    filter: grayscale(100);
+    transition: 1s;
+   border-radius: 50% 0 0 50%;
+   background-color: var(--1);
+   
+    
+}
+
+.download{
+
+    background-color: var(--5);
+    padding: 3%;
+    text-decoration: none;
+    color: var(--0);
+    border-radius: 10px;
+    transition: 1s;
+}
+.download:hover{
+    text-decoration: underline;
+    filter: brightness(1.3);
+}
+.text{
+    margin-left: 25vw;
+    margin-top: 10vw;
+    text-align: center;
+
+}
+.circle {
+    position: absolute; 
+    transform: translateY(6vw) translateX(70vw);
+    top: 0;
+    left: 0;
+    width: 30vw; /* Set the circle's width and height to match the image's dimensions */
+    height: 39vw;
+    border-radius: 35vw 0 0 35vw;
+    background-color: var(--2); /* Adjust the background color and transparency */
+    z-index: -1; /* Push the circle behind the image */
+    transition: 1s;
+}
+.circle2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(10vw) translateX(-20vw);
+    width: 70vw; /* Set the circle's width and height to match the image's dimensions */
+    height: 80vh;
+    border-radius: 35vw 35vw 0 0;
+    background-color: var(--2); /* Adjust the background color and transparency */
+    z-index: -1; /* Push the circle behind the image */
+    transition: 1s;
+
 }
