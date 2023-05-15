@@ -34,7 +34,8 @@ export default function Projects(){
   
     return(
         <div className={style.container}>
-
+            <div className={style.circle}></div>
+             <div className={style.circle2}></div>
             <h1 className={style.title}>Previous Projects</h1>
 
             <ProjectCard project = {sudoku} /> 

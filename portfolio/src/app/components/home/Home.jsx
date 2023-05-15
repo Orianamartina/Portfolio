@@ -1,8 +1,7 @@
 
 import style from "./home.module.css"
 import Image from "next/image"
-import picture from "./oriana.png"
-import img from "../../../../public/oriana.png"
+import img from "../../../../public/oriana2.jpg"
 export default function  Home(){ 
 
 
@@ -11,7 +10,7 @@ export default function  Home(){
         
             <div className={style.text}>
                 <div className={style.circle2}></div>
-                <h1>Hello, i am Oriana</h1>
+                <h1>Hello, I am Oriana</h1>
                 <h2>Full-stack developer</h2>    
                 <a className={style.download} download={true}
                 href= "/ORIANA PETTINELLI cv INGLES.pdf"

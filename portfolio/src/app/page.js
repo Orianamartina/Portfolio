@@ -6,7 +6,7 @@ import Projects from './components/projects/Projects'
 import AboutMe from './components/about me/AboutMe'
 import { useState } from 'react'
 import {motion, AnimatePresence } from 'framer-motion'
-import Stack from './components/Stack/Stack'
+import Experience from './components/Stack/Experience'
 import Contact from './components/contact/Contact'
 
 
@@ -23,7 +23,7 @@ export default function Main() {
   const transitionVariants = {
     enter: {
       opacity: 0,
-      x: 50,
+      //x: 50,
       overflow: 'hidden',
 
       
@@ -34,7 +34,7 @@ export default function Main() {
     },
     exit: {
       opacity: 0,
-      x: -50,
+     // x: -50,
     },
   };
   
@@ -46,8 +46,8 @@ export default function Main() {
         return <AboutMe />;
       case 'projects':
         return <Projects />;
-      case 'stack':
-        return <Stack />
+      case 'experience':
+        return <Experience />
       case 'contact':
         return <Contact />
       default:
@@ -59,7 +59,7 @@ export default function Main() {
         { name: 'Home', id: 'home' },
         { name: 'About Me', id: 'aboutMe' },
         { name: 'Projects', id: 'projects' },
-        { name: 'Stack', id: 'stack'},
+        { name: 'Experience', id: 'experience'},
         { name: 'Contact', id: 'contact'},
       ];
   return (

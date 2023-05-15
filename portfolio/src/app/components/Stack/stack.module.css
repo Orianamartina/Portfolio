@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    color: var(--0);
+}
+.imgContainer{
+    margin: auto;
+    width: 50%;
+    margin-top: 5%;
+}
+.bigImgContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.img{
+    width: 4vw;
+}
+.imgBig{
+    width: 35vw;
+    height: 30vw;
+    object-fit: cover;
+    margin: 2%;
+    border-radius: 5vw;
+    border: 0.2vw solid var(--1);
+
+
+
+}

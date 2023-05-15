@@ -3,3 +3,28 @@
     text-align: center;
 
 }
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(80vw) translateX(-20vw);
+    width: 70vw; /* Set the circle's width and height to match the image's dimensions */
+    height: 80vh;
+    border-radius: 35vw 35vw 0 0;
+    background-color: var(--2); /* Adjust the background color and transparency */
+    z-index: -1; /* Push the circle behind the image */
+    transition: 1s;
+
+}
+.circle2 {
+    position: absolute; 
+    transform: translateY(7vw) translateX(68.8vw);
+    top: 0;
+    left: 0;
+    width: 30vw; /* Set the circle's width and height to match the image's dimensions */
+    height: 50vw;
+    border-radius: 40vw 0 0 40vw;
+    background-color: var(--2); /* Adjust the background color and transparency */
+    z-index: -1; /* Push the circle behind the image */
+    transition: 1s;
+}

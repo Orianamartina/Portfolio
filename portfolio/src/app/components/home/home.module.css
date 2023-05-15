@@ -17,7 +17,7 @@
     filter: drop-shadow(5px 5px 5px var(--5));
     border-radius: inherit;
     margin-right: 0;
-    filter: grayscale(100);
+    
     transition: 1s;
    border-radius: 50% 0 0 50%;
    background-color: var(--1);

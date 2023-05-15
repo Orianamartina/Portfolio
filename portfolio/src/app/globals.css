@@ -1,19 +1,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
 
-:root{/*
+:root{
+  
   --0:#584036;;
   --1: #ffb28f;
   --2: #ffccbd;
   --3: #fffbde;
   --4: #ffadbb;
-  --5: #ffe3fc;*/
+  --5: #ffe3fc;
+
+/*
   --0:#45462a;;
   --1: #606c38;
   --2: #bc6c25;
   --3: #fefae0;
-  --4: #efdcac;
-  --5: #d4a373;
+  --4: #efdcac; 
+  --5: #d4a373;*/
+ /* --0: #053b47;
+  --1: #5e9299;
+  --2: #e8b867;
+  --3: #faf3ee;
+  --4: #ffeae0;
+  --5: #ffc1a2;
+
+  --0: #324f50;
+  --1: #85cbcc;
+  --2: #a8dee0;
+  --3: #f9e2ae;
+  --4: #fbc78d;
+  --5: #a7d676;
+*/
+
 
   --font: 'Ubuntu', sans-serif;
 }
