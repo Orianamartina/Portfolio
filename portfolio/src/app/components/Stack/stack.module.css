@@ -93,4 +93,28 @@
     .expContainer{
         width: 80vw;
     }
+    .link{
+        font-size: 3vw;
+    }
+    .description{
+        font-size: 3.5vw;
+    }
+    .title{
+        font-size: 4vw;
+    }
+    .year{
+        font-size: 3vw;
+    }
+    .circle2{
+        transform: translateY(150vh);
+        height: 50vh;
+    }
+    .imgContainer{
+        width: 60vw;
+     
+    }
+    .img{
+        width: 5vw;
+        height: 5vw;
+    }
 }
