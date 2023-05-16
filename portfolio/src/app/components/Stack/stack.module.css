@@ -1,5 +1,6 @@
 .container{
     width: 100%;
+    margin-bottom: 5%;
 }
 .title{
     text-align: center;
@@ -38,9 +39,9 @@
 
     top: 0;
     left: 0;
-    transform: translateY(32vh) translateX(-20vw);
+    transform: translateY(300vh) translateX(-20vw);
     width: 70vw; /* Set the circle's width and height to match the image's dimensions */
-    height: 80vh;
+    height: 100vh;
     border-radius: 35vw 35vw 0 0;
     background-color: var(--2); /* Adjust the background color and transparency */
     z-index: -1; /* Push the circle behind the image */
@@ -49,14 +50,41 @@
 }
 .circle{
     position: absolute; 
-    transform: translateY(7vw) translateX(78.8vw);
+    transform: translateY(15vw) translateX(78.8vw);
     top: 0;
     left: 0;
-    width: 20vw; /* Set the circle's width and height to match the image's dimensions */
-    height: 40vw;
+    width: 25vw; /* Set the circle's width and height to match the image's dimensions */
+    height: 45vw;
     border-radius: 40vw 0 0 40vw;
     background-color: var(--2); /* Adjust the background color and transparency */
     z-index: -1; /* Push the circle behind the image */
     transition: 1s;
 
+}
+.expContainer{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    border: 0.3vw solid var(--4);
+    padding: 3%;
+    color: var (--0);
+    border-radius: 10px;
+}
+.year{
+    font-size: 1vw;
+}
+.description{
+    font-weight: lighter;
+    font-size: 1.5vw;
+    
+}
+.link{
+    text-decoration: none;
+    color: var(--0);
+    cursor: pointer;
+    font-weight: bolder;
+}
+.link:hover{
+    text-decoration: underline;
 }
