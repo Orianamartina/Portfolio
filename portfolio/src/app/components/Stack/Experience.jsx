@@ -20,7 +20,7 @@ export default function Experience(){
     return(
         <div className={style.container}>
             
-            <h1 className={style.title}>Experience</h1>
+            <h1 className={style.title}>Experience and skills</h1>
             <div className={style.imgContainer}>
                 <img className={style.img} src={html.src} alt="html" />
                 <img className={style.img} src={css.src} alt="css" />
@@ -36,9 +36,16 @@ export default function Experience(){
                 <img className={style.img} src={github.src} alt="github" />
                
             </div> 
+            <div className={style.circle}></div>
+            <div className={style.circle2}></div>
             <div className={style.bigImgContainer}>
+
+                <a href="https://certificates.soyhenry.com/new-cert?id=d6cb42c7273f109dbb42d68b4b9e10c0ac6942d7335adebefd564c998198980b"          target="_blank">
                 <img className={style.imgBig} src={henry.src} alt="henry" />
-                <img className={style.imgBig} src={english.src} alt="english" />
+                </a>
+                <a href="https://efset.org/cert/1X3aht"          target="_blank">  <img className={style.imgBig} src={english.src} alt="english" /> </a>
+    
+               
             </div>
                
         </div>

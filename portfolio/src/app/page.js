@@ -75,7 +75,7 @@ export default function Main() {
             exit="exit"
             onExitComplete={() => window.scrollTo(0, 0)}
             className={style.motionDiv}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 1 }}
           >
             {selectedComponent === component.id && renderComponent(component.id)}
           </motion.div>

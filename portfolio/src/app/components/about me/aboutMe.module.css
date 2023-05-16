@@ -3,7 +3,7 @@
     margin: auto;
     text-align: center;
     margin-top: 1%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     background-color: var(--3);
     padding: 1%;
     padding-left: 2%;
@@ -12,6 +12,7 @@
     border: 0.3vw solid var(--5);
     border-radius: 15px;
     shape-margin: 20px;
+    font-weight: lighter;
  
 }
 
@@ -44,4 +45,15 @@
     shape-outside: circle(); /* Define the shape of the text */
     clip-path: circle(); /* Create the circular clipping path */
 
+}
+@media (max-width: 800px){
+    .container{
+        border: 1.5vw solid var(--5);
+    }
+    .paragraph{
+        font-size: 4vw;
+    }
+    .oriana{
+        width: 50vw;
+    }
 }

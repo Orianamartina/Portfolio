@@ -1,0 +1,17 @@
+.container{
+    margin: auto;
+    text-align: center;
+}
+.buttons{
+    width: 2vw;
+}
+.linkText{
+    font-size: 2vw;
+    color: var(--0);
+    text-decoration: none;
+    font-weight: lighter;
+
+}
+.textContainers{
+    margin-top: 5%;
+}

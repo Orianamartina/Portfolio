@@ -2,6 +2,8 @@
 import style from "./home.module.css"
 import Image from "next/image"
 import img from "../../../../public/oriana2.jpg"
+import github from "../../../../public/github.png"
+import linkedin from "../../../../public/linkedin.png"
 export default function  Home(){ 
 
 
@@ -16,7 +18,16 @@ export default function  Home(){
                 href= "/ORIANA PETTINELLI cv INGLES.pdf"
                 alt="alt text"
                 target="_blank"
-                rel="noopener noreferrer"   >Download Resume</a>
+                   >Download Resume</a>
+                <div>
+                   <a  href="https://www.linkedin.com/in/oriana-pettinelli-777a09268/" target="_blank">
+                        <img className={style.contactButton} src={linkedin.src} alt="" />
+                    </a>
+                    <a  href="https://github.com/Orianamartina" target="_blank">
+                        <img className={style.contactButton} src={github.src} alt="" />
+                    </a> 
+                </div>
+                
             </div>
             <div>
                

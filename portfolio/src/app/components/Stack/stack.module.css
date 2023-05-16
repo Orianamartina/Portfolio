@@ -4,29 +4,59 @@
 .title{
     text-align: center;
     color: var(--0);
+    font-size: 2vw;
 }
 .imgContainer{
     margin: auto;
     width: 50%;
     margin-top: 5%;
+    margin-bottom: 2%;
 }
 .bigImgContainer{
     margin: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 .img{
     width: 4vw;
+    filter: sepia(0.3);
 }
 .imgBig{
-    width: 35vw;
-    height: 30vw;
+    width: 20vw;
+    height: 15vw;
     object-fit: cover;
     margin: 2%;
-    border-radius: 5vw;
+
     border: 0.2vw solid var(--1);
 
 
+
+}
+.circle2{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    transform: translateY(32vh) translateX(-20vw);
+    width: 70vw; /* Set the circle's width and height to match the image's dimensions */
+    height: 80vh;
+    border-radius: 35vw 35vw 0 0;
+    background-color: var(--2); /* Adjust the background color and transparency */
+    z-index: -1; /* Push the circle behind the image */
+    transition: 1s;
+
+}
+.circle{
+    position: absolute; 
+    transform: translateY(7vw) translateX(78.8vw);
+    top: 0;
+    left: 0;
+    width: 20vw; /* Set the circle's width and height to match the image's dimensions */
+    height: 40vw;
+    border-radius: 40vw 0 0 40vw;
+    background-color: var(--2); /* Adjust the background color and transparency */
+    z-index: -1; /* Push the circle behind the image */
+    transition: 1s;
 
 }

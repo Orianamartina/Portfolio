@@ -9,11 +9,11 @@
 }
 
 .oriana{
-    height: 40vw;
+    height: 86vh;
     width: 30vw;
     object-fit: cover;
     object-position: top;
-    filter: grayscale(0.6);
+
     filter: drop-shadow(5px 5px 5px var(--5));
     border-radius: inherit;
     margin-right: 0;
@@ -42,25 +42,14 @@
     margin-left: 25vw;
     margin-top: 10vw;
     text-align: center;
+    color: var(--0)
 
-}
-.circle {
-    position: absolute; 
-    transform: translateY(6vw) translateX(70vw);
-    top: 0;
-    left: 0;
-    width: 30vw; /* Set the circle's width and height to match the image's dimensions */
-    height: 39vw;
-    border-radius: 35vw 0 0 35vw;
-    background-color: var(--2); /* Adjust the background color and transparency */
-    z-index: -1; /* Push the circle behind the image */
-    transition: 1s;
 }
 .circle2{
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(10vw) translateX(-20vw);
+    transform: translateY(20vh) translateX(-20vw);
     width: 70vw; /* Set the circle's width and height to match the image's dimensions */
     height: 80vh;
     border-radius: 35vw 35vw 0 0;
@@ -68,4 +57,38 @@
     z-index: -1; /* Push the circle behind the image */
     transition: 1s;
 
+}
+.contactButton{
+    width: 3vw;
+    display: inline-block;
+    filter : grayscale(100);
+    margin: 1vw;
+    margin-top: 2vw;
+}
+
+@media (max-width: 600px){
+    .oriana{
+        margin-top: 15vh;
+        width: 65vw;
+        height: 55vh;
+        transform: translateX(5vw);
+    }
+    .text{
+        margin-left: 5vw;
+        font-size: 3vw;
+        margin-top: 30vh;
+    }
+    .circle2{
+        transform: translateY(15vh) translateX(0vw);
+        width: 70vw;
+        height: 85vh;
+    }
+    .contactButton{
+        width: 5vw;
+        margin-top: 6vw;
+    }
+    .download{
+        padding: 2vw;
+    
+    }   
 }

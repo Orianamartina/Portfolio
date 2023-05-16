@@ -33,3 +33,19 @@
     
 
 }
+.notActive:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (max-width: 600px){
+    .container{
+        height: 5vh;
+   
+    }
+    .notActive{
+        font-size: 3vw;
+    }
+    .active{
+        font-size: 3vw;
+    }
+}

@@ -4,14 +4,14 @@
     width: 50%;
 }
 .allInfoContainer{
-    position: relative;
+    justify-self: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
     width: 100%;
     margin-bottom: 5%;
-    margin-top: 5%;
+
 }
 .hiddenInfo{
     opacity: 0;
@@ -20,6 +20,8 @@
     transition: all 1s ease;
     width: 20vw;
     z-index: 1;
+    font-size: 1vw;
+    font-weight: 100;
 
 }
 .showInfo{
@@ -32,7 +34,11 @@
     padding: 3%;
     font-size: 1vw;
     color: var(--0);
+ 
 
+}
+.text{
+    font-weight: 400;
 }
 .titleAndImage{
     width: 20vw;
@@ -69,7 +75,7 @@
     transition: all 1s ease;
     object-position: top;
     z-index: 2;
-    border: 5px solid var(--4);
+    border: 2px solid var(--4);
 }
 .unClickedImg:hover{
     opacity: 1;
@@ -95,7 +101,8 @@
 }
 
 .title{
-    color: var(--0)
+    color: var(--0);
+    font-size: 1.5vw;
 }
 .clickedSpace{
     width: 5%;
@@ -103,4 +110,28 @@
 .unClickedSpace{
     width: 5%;
 }
+@media (max-width: 800px){
+    .container{
+        width:90vw;
+    }
+    .hiddenInfo, .showInfo{
+        width: 30vw;
+        font-size: 2vw;
 
+    }
+    .clickedImg, .unClickedImg{
+        width: 30vw;
+        height: 30vw;
+    }
+    .titleAndImage{
+        width: 30vw;
+        margin-left: 8vw;
+    }
+    .title{
+        font-size: 4vw;
+    }
+    .linkButton{
+        font-size: 2vw;
+    }
+    
+}

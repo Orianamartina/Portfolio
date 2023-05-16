@@ -3,6 +3,10 @@
     text-align: center;
 
 }
+.title{
+    color: var(--0);
+    font-size: 2vw;
+}
 .circle{
     position: absolute;
     top: 0;
@@ -27,4 +31,11 @@
     background-color: var(--2); /* Adjust the background color and transparency */
     z-index: -1; /* Push the circle behind the image */
     transition: 1s;
+}
+@media (max-width: 800px){
+    .circle{
+        height: 70vh;
+        transform: translateY(100vw);
+    }
+    
 }
