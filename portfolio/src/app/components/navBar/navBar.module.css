@@ -4,13 +4,13 @@
     margin: auto;
     display: flex;
     justify-content: space-around;
-
+    height: 10vh;
   
 }
 .active{
     text-decoration: underline;
     font-size: 1.3vw;
-    margin: 2%;
+    margin: 1%;
     padding: 1%;
     background-color: var(--3);
     border: none;
@@ -26,7 +26,7 @@
   
     font-size: 1.3vw;
     
-    margin: 2%;
+    margin: 1%;
     padding: 1%;
   
     color: var(--0)

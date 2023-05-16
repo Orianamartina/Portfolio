@@ -18,7 +18,7 @@
     margin-top: 10%;
     transform: translateX(-50%);
     transition: all 1s ease;
-    width: 100%;
+    width: 20vw;
     z-index: 1;
 
 }
@@ -26,22 +26,22 @@
     opacity: 1;
     margin-top: 11%;
     transition: all 1s ease;
-    width: 100%;
+    width: 20vw;
     z-index: 1;
     border-radius: 0 30px 30px 0;
     padding: 3%;
-    font-size: 1.3vw;
+    font-size: 1vw;
     color: var(--0);
 
 }
 .titleAndImage{
-    width: 25vw;
+    width: 20vw;
     transform: translateX(50%);
     transition: all 1s ease;
     z-index: 2
 }
 .titleAndImageClicked{
-    width: 25vw;
+    width: 20vw;
     margin-left: 0;
     transition: all 1s ease;
     z-index: 2
@@ -51,6 +51,7 @@
     font-size: 1.3vw;
     padding: 1%;
     color: var(--0);
+    display: block;
 
 }
 .linkButton:hover{
@@ -59,8 +60,8 @@
 }
 .unClickedImg{
     position: relative;
-    width: 25vw;
-    height: 20vw;
+    width: 20vw;
+    height: 15vw;
     object-fit: cover;
     cursor: pointer;
     opacity: 0.9;
@@ -68,7 +69,7 @@
     transition: all 1s ease;
     object-position: top;
     z-index: 2;
-    border: 5px solid var(--1);
+    border: 5px solid var(--4);
 }
 .unClickedImg:hover{
     opacity: 1;
@@ -78,14 +79,14 @@
 
 
 .clickedImg{ 
-    border: 2px solid var(--1);
+    border: 2px solid var(--4);
     margin-left: 0%;
-    width: 25vw;
-    height: 20vw;
+    width: 20vw;
+    height: 15vw;
     object-fit: cover;
 
     border-radius: 5px;
-    box-shadow: -3vw 3vw var(--1);
+    box-shadow: -3vw 3vw var(--4);
     transition: all 1s ease;
     cursor: pointer;
     z-index: 3;

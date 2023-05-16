@@ -3,7 +3,7 @@ import style from "./projects.module.css"
 
 import dogHub1 from "../../../../public/dogHub1.png"
 
-
+import electroShop1 from "../../../../public/electroshop.png"
 import sudoku1 from "../../../../public/Sudoku.png"
 import sudoku2 from "../../../../public/SudokuMobile.png"
 import ProjectCard from "../ProjectCard/ProjectCard"
@@ -11,6 +11,13 @@ import ProjectCard from "../ProjectCard/ProjectCard"
 
 export default function Projects(){
 
+    const electroShop = {
+        img: electroShop1,
+        name: "ElectroShop",
+        description: "E-Commerce focused on electronic devices such as computers, tablets, cell-phones as well as accesories. Created as a bootcamp final project with a group of five students using SCRUM methodologies.",
+        url: "https://github.com/Orianamartina/Electroshop",
+        video: "https://www.youtube.com/watch?v=hz_tKs5abKA"
+    }
     const sudoku = {
         img: sudoku1,
         name: "Sudoku",
@@ -38,9 +45,12 @@ export default function Projects(){
              <div className={style.circle2}></div>
             <h1 className={style.title}>Previous Projects</h1>
 
+            <ProjectCard project = {electroShop}/>
+            <ProjectCard project = {dogHub} />
             <ProjectCard project = {sudoku} /> 
             <ProjectCard project = {sudokuMobile} />
-            <ProjectCard project = {dogHub} />
+            
+
 
 
             

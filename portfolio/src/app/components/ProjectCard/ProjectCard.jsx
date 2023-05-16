@@ -18,9 +18,12 @@ export default function ProjectCard(props){
                 </div>
                 <div className={clickFlag? style.showInfo: style.hiddenInfo}>
                         <h3>{props.project.description}  </h3>
-                        <a className={style.linkButton} target="_blank" href={props.project.url}>See project</a>
+                        <a className={style.linkButton} target="_blank" href={props.project.url}>Repository</a>
+                         {
+                            props.project.video? <a className={style.linkButton} target="_blank" href={props.project.video}>Video</a>: " "
+                         }
                 </div>
-                
+               
                     
 
             </div>
