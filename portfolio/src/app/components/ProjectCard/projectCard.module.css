@@ -119,13 +119,19 @@
         font-size: 2vw;
 
     }
-    .clickedImg, .unClickedImg{
+    .clickedImg{
         width: 35vw;
         height: 30vw;
     }
+    .unClickedImg{
+     
+        width: 70vw;
+        height: 55vw;  
+    }
     .titleAndImage{
-        width: 35vw;
-        margin-left: 6vw;
+        width: 70vw;
+        transform: translateX(15vw);
+
     }
     .title{
         font-size: 4vw;
