@@ -37,7 +37,7 @@
     text-decoration: underline;
     cursor: pointer;
 }
-@media (max-width: 600px){
+@media (max-width: 1000px){
     .container{
         height: 5vh;
    

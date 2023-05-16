@@ -32,7 +32,7 @@
     z-index: -1; /* Push the circle behind the image */
     transition: 1s;
 }
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .circle{
         height: 0;
        

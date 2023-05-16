@@ -89,7 +89,7 @@
 .link:hover{
     text-decoration: underline;
 }
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .expContainer{
         width: 80vw;
     }

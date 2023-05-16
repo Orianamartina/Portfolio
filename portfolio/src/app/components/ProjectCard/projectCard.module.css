@@ -110,7 +110,7 @@
 .unClickedSpace{
     width: 5%;
 }
-@media (max-width: 800px){
+@media (max-width: 1000px){
     .container{
         width:100vw;
     }
