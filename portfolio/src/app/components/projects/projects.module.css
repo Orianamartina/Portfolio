@@ -34,8 +34,8 @@
 }
 @media (max-width: 800px){
     .circle{
-        height: 35vh;
-        transform: translateY(90vh);
+        height: 0;
+       
     }
     .circle2{
         transform: translateY(20vh) translateX(69vw);
