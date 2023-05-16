@@ -38,6 +38,15 @@ export default function Experience(){
             </div> 
             <div className={style.circle}></div>
             <div className={style.circle2}></div>
+
+            <div className={style.expContainer}>
+                    <h2>Henry Bootcamp</h2>
+                    <h3>2023</h3>
+                    <h3>
+                    During the four-month bootcamp, I delved into Node.js, React, Redux, Sequelize, Express, and MySQL, completing an individual project and a final group project using Scrum methodologies. With approximately 700 hours of dedicated learning, I gained comprehensive full-stack web development skills and experienced real-world challenges. Mentored by industry professionals, 
+                    I emerged equipped with newfound knowledge, resilience, and passion for web development.
+                    </h3>
+            </div>
             <div className={style.bigImgContainer}>
 
                 <a href="https://certificates.soyhenry.com/new-cert?id=d6cb42c7273f109dbb42d68b4b9e10c0ac6942d7335adebefd564c998198980b"          target="_blank">

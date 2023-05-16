@@ -37,5 +37,7 @@
         height: 70vh;
         transform: translateY(100vw);
     }
-    
+    .title{
+        font-size: 4vw;
+    }
 }

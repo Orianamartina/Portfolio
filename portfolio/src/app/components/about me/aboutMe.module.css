@@ -48,7 +48,10 @@
 }
 @media (max-width: 800px){
     .container{
-        border: 1.5vw solid var(--5);
+        border: 1vw solid var(--5);
+        box-shadow: 4vw 4vw var(--4);
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
     .paragraph{
         font-size: 4vw;

@@ -3,7 +3,7 @@
     text-align: center;
 }
 .buttons{
-    width: 2vw;
+    height: 2vw;
 }
 .linkText{
     font-size: 2vw;
@@ -14,4 +14,15 @@
 }
 .textContainers{
     margin-top: 5%;
+}
+@media (max-width: 800px){
+    .linkText{
+        font-size: 5vw;
+    }
+    .buttons{
+        height: 4vw;
+    }
+    .container{
+        margin-top: 30vh;
+    }
 }
