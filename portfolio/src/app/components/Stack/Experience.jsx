@@ -48,12 +48,12 @@ export default function Experience(){
                     <a className={style.link}  href="https://certificates.soyhenry.com/new-cert?id=d6cb42c7273f109dbb42d68b4b9e10c0ac6942d7335adebefd564c998198980b" target="_blank">Certificate</a>
             </div>
             <div className={style.expContainer}> 
-                <h1 className = {style.title} > Bachelor's degree in Computer Science, Universidad Nacional de Quilmes</h1>
+                <h1 className = {style.title} > Bachelor&apos;s degree in Computer Science, Universidad Nacional de Quilmes</h1>
                 <h2 className={style.year} >2022 / current</h2>
                 <h3 className={style.description} >The initial cycle, called Diploma in Computer Programming, is aimed at offering solid training in basic knowledge related to Computer Programming. At the end of the studies corresponding to the first cycle, students obtain a certificate of Diploma in Computer Programming.  
                     
                 </h3>
-                <h3 className={style.description} >The upper cycle of the Bachelor's Degree in Computer Science completes the Diploma in Computer Programming with extensive training in specific topics of the discipline with the aim that the graduate can play a leading role in it.</h3>
+                <h3 className={style.description} >The upper cycle of the Bachelor&apos;s Degree in Computer Science completes the Diploma in Computer Programming with extensive training in specific topics of the discipline with the aim that the graduate can play a leading role in it.</h3>
                 <a className={style.link}  href="http://www.unq.edu.ar/carreras/58-licenciatura-en-informática.php" target="_blank">Program</a> 
 
             </div>
