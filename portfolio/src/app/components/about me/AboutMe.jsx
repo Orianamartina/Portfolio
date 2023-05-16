@@ -1,5 +1,6 @@
 import style from "./aboutMe.module.css"
 import oriana from "../../../../public/oriana3.jpg"
+import Image from "next/image"
 export default function AboutMe(){
 
     return(
