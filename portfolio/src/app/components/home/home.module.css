@@ -27,7 +27,7 @@
 
 .download{
 
-    background-color: var(--5);
+    background-color: var(--4);
     padding: 3%;
     text-decoration: none;
     color: var(--0);
@@ -54,7 +54,7 @@
     height: 80vh;
     border-radius: 35vw 35vw 0 0;
     background-color: var(--2); /* Adjust the background color and transparency */
-    z-index: -1; /* Push the circle behind the image */
+    z-index: -2; /* Push the circle behind the image */
     transition: 1s;
 
 }
@@ -80,8 +80,21 @@
     }
     .circle2{
         transform: translateY(15vh) translateX(0vw);
-        width: 70vw;
+        width: 100vw;
         height: 85vh;
+        border-radius: 0;
+    }
+    .circle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 120vw; /* Set the circle's width and height to match the image's dimensions */
+        height: 120vw;
+        border-radius: 0 0 0 100%;
+        transform: translateY(-20vh) translateX(-20vw);
+        background-color: var(--3); /* Adjust the background color and transparency */
+        z-index: -1; /* Push the circle behind the image */
+        transition: 1s;
     }
     .contactButton{
         width: 5vw;

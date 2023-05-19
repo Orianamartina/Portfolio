@@ -42,7 +42,7 @@
 }
 .titleAndImage{
     width: 20vw;
-    transform: translateX(50%);
+    transform: translateX(53%);
     transition: all 1s ease;
     z-index: 2
 }

@@ -8,8 +8,8 @@
     padding: 1%;
     padding-left: 2%;
     padding-right: 5%;
-    box-shadow: 2vw 2vw var(--4);
-    border: 0.3vw solid var(--2);
+    /*box-shadow: 2vw 2vw var(--4);*/
+    border: 0.2vw solid var(--2);
     border-radius: 15px;
     shape-margin: 20px;
     font-weight: lighter;
@@ -49,7 +49,7 @@
 @media (max-width: 700px){
     .container{
         border: 1vw solid var(--2);
-        box-shadow: 4vw 4vw var(--4);
+       /* box-shadow: 4vw 4vw var(--4);*/
         margin-top: 5vh;
         margin-bottom: 5vh;
     }
