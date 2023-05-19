@@ -15,27 +15,31 @@ export default function Projects(){
         img: electroShop1,
         name: "ElectroShop",
         description: "E-Commerce focused on electronic devices such as computers, tablets, cell-phones as well as accesories. Created as a bootcamp final project with a group of five students using SCRUM methodologies.",
-        url: "https://github.com/Orianamartina/Electroshop",
-        video: "https://www.youtube.com/watch?v=hz_tKs5abKA"
+        url: "https://electroshop-delta.vercel.app",
+        video: "https://www.youtube.com/watch?v=hz_tKs5abKA",
+        repositorio: "https://github.com/Orianamartina/Electroshop"
     }
     const sudoku = {
         img: sudoku1,
         name: "Sudoku",
         description: "Sudoku SPA made in React. Accessible for wider screens, interactive interface, keyboard support, game state management, different styles depending on the user's preference.",
-        url: "https://sudoku-prueba.vercel.app"
+        url: "https://sudoku-prueba.vercel.app",
+        repositorio:"https://github.com/Orianamartina/sudoku-prueba"
     }
 
     const sudokuMobile = {
         img: sudoku2,
         name: "Sudoku Mobile",
         description: "Sudoku SPA made in react. Accessible for smaller screens, interactive interface with number selection buttons for touch screens, game state management, different styles depending on the user's preference.",
-        url: "https://sudoku-prueba.vercel.app"
+        url: "https://sudoku-prueba.vercel.app",
+        repositorio: "https://github.com/Orianamartina/sudoku-prueba"
     }
     const dogHub = {
         img: dogHub1,
         name: "DogHub",
         description: "Dog breed searching SPA. Responsive. Search your favorite breeds, sort them or filter them by the given options, find all their information, or create a new one.",
-        url: "https://proyecto-individual-henry.vercel.app"
+        url: "https://proyecto-individual-henry.vercel.app",
+        repositorio: "https://github.com/Orianamartina/Proyecto-individual-henry"
     }
    
   
