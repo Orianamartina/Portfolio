@@ -28,9 +28,9 @@ export default function Contact(){
             </button>
             <button className={style.textContainers}>
                 
-                <h2 className={style.linkText} >
+                <a className={style.linkText} href="mailto:orianapettinelli1@gmail.com" >
                 <img src={email.src} className={style.buttonImage} alt="" />    
-                    orianapettinelli1@gmail.com</h2>
+                    orianapettinelli1@gmail.com</a>
             </button>
             
            
