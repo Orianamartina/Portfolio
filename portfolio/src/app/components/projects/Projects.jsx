@@ -1,11 +1,10 @@
 
 import style from "./projects.module.css"
 
-import dogHub1 from "../../../../public/dogHub1.png"
+import dogHub1 from "../../../../public/dog.png"
 
-import electroShop1 from "../../../../public/electroshop.png"
-import sudoku1 from "../../../../public/Sudoku.png"
-import sudoku2 from "../../../../public/SudokuMobile.png"
+import electroShop1 from "../../../../public/logo.png"
+import sudoku1 from "../../../../public/sudoku.png"
 import ProjectCard from "../ProjectCard/ProjectCard"
 
 
@@ -28,7 +27,7 @@ export default function Projects(){
     }
 
     const sudokuMobile = {
-        img: sudoku2,
+        img: sudoku1,
         name: "Sudoku Mobile",
         description: "Sudoku SPA made in react. Accessible for smaller screens, interactive interface with number selection buttons for touch screens, game state management, different styles depending on the user's preference. Made with React and nodeJs",
         url: "https://sudoku-prueba.vercel.app",

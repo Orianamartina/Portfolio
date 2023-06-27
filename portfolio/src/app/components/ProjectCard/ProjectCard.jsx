@@ -12,9 +12,9 @@ export default function ProjectCard(props){
     return(
         <div className={style.container}>
             <div className={style.allInfoContainer}>
-                <div className={clickFlag? style.titleAndImageClicked: style.titleAndImage}>
+                <div className={clickFlag? style.titleAndImageClicked: style.titleAndImage} onClick={() =>setClickFlag(!clickFlag)}>
                     <h2 className={style.title}>{props.project.name}</h2>
-                    <Image className={clickFlag? style.clickedImg: style.unClickedImg} src={props.project.img} onClick={() =>setClickFlag(!clickFlag)} alt="" />
+                    <Image className={clickFlag? style.clickedImg: style.unClickedImg} src={props.project.img}  alt="" />
                     
                 </div>
                 <div className={clickFlag? style.showInfo: style.hiddenInfo}>
