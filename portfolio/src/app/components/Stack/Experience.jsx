@@ -20,7 +20,7 @@ export default function Experience(){
         <div className={style.container}>
             
             <h1 className={style.title}>Experience and skills</h1>
-            <div className={style.imgContainer}>
+            {/*<div className={style.imgContainer}>
                 <Image className={style.img} src={html} alt="html" />
                 <Image className={style.img} src={css} alt="css" />
                 <Image className={style.img} src={javascript} alt="javascript" />
@@ -36,8 +36,35 @@ export default function Experience(){
                
             </div> 
             <div className={style.circle}></div>
-            <div className={style.circle2}></div>
+            <div className={style.circle2}></div>*/}
+            <div className={style.expContainer}>
 
+                <h2 className = {style.title} >Languages</h2>
+                <ul className={style.list}>
+                    <li className={style.stackDescription}>Javascript</li>
+                    <li className={style.stackDescription}>Python</li>
+                    <li className={style.stackDescription}>HTML</li>
+                    <li className={style.stackDescription}>CSS</li>
+                </ul>
+               
+                <h2 className = {style.title} >Front - end</h2>
+                <ul className={style.list}>
+                    <li className={style.stackDescription}>React</li>
+                    <li className={style.stackDescription}>NextJs</li>
+                    <li className={style.stackDescription}>Redux</li>
+                    <li className={style.stackDescription}>React-router-dom</li>
+                    <li className={style.stackDescription}>Responsive websites</li>
+                </ul>
+                <h2 className = {style.title} >Back - end</h2>
+                <ul className={style.list}>
+                    <li className={style.stackDescription}>Express</li>
+                    <li className={style.stackDescription}>Django</li>
+                    <li className={style.stackDescription}>JWT</li>
+                    <li className={style.stackDescription}>PostgreSQL</li>
+                    <li className={style.stackDescription}>MySQL</li>
+                </ul>
+        
+            </div>
             <div className={style.expContainer}>
                     <h2 className = {style.title} >Henry Bootcamp</h2>
                     <h3 className={style.year}>2023</h3>
