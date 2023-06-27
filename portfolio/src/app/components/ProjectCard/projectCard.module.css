@@ -22,7 +22,7 @@
     z-index: 1;
     font-size: 1vw;
     font-weight: 100;
-
+    text-align: justify;
 }
 .showInfo{
     opacity: 1;
@@ -34,7 +34,7 @@
     padding: 3%;
     font-size: 1vw;
     color: var(--0);
- 
+    text-align: justify;
 
 }
 .text{
