@@ -4,12 +4,15 @@
 }
 .buttons{
     height: 2vw;
+
 }
 .linkText{
     font-size: 2vw;
     color: var(--0);
     text-decoration: none;
     font-weight: lighter;
+    display: block;
+    margin: 0;
 
 }
 .linkText:hover{
@@ -17,6 +20,7 @@
 }
 .textContainers{
     margin-top: 5%;
+
 }
 @media (max-width: 1000px){
     .linkText{
