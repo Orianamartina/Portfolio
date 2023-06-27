@@ -10,13 +10,18 @@ export default function NavBar(props){
             
                 {components.map((component) => {
                         return(
-                        <button className={selectedComponent === component.id ? style.active : style.notActive}
-                              
-                                onClick={() => props.handleComponentClick(component.id)}
-                                key={component.id}
-                                >
-                            {component.name}
-                        </button>
+                        <>
+                            
+                            <button className={selectedComponent === component.id ? style.active : style.notActive}
+                                
+                                    onClick={() => props.handleComponentClick(component.id)}
+                                    key={component.id}
+                                    >
+                                <img src={component.image} className={style.buttonImage}></img>
+                                <h1 className={style.buttonText}>{component.name}</h1>
+                            </button>
+                        
+                        </>
                    )
                 })}
         

@@ -1,21 +1,26 @@
 
 .container{
-    width: 80%;
+    width: 85%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 10vh;
+    margin-bottom: 2%;
   
 }
 .active{
-    text-decoration: underline;
+  
     font-size: 1.3vw;
     margin: 1%;
     padding: 1%;
-    background-color: var(--3);
+    background-color: var(--5);
+
     border: none;
+    border-radius: 10px;
     color: var(--0);
     font-weight: 700;
+    height: min-content;
+    transition:0.5s;
     
     
 }
@@ -23,19 +28,31 @@
 .notActive{
     background-color: var(--3);
     border: none;
-  
-    font-size: 1.3vw;
-    
     margin: 1%;
     padding: 1%;
   
-    color: var(--0)
-    
+    color: var(--0);
+    height: min-content;
+    border-radius: 10px;
+    transition: 0.5s;
 
 }
 .notActive:hover{
     text-decoration: underline;
     cursor: pointer;
+    background-color: var(--5);
+  
+}
+.buttonImage{
+    height: 1.3vw;
+    margin-right: 2%;
+
+
+}
+.buttonText{
+    
+    font-size: 1.3vw;
+    margin: 0;
 }
 @media (max-width: 1000px){
     .container{

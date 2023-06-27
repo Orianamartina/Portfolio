@@ -8,6 +8,21 @@
     text-decoration: none;
 
 }
+.listContainer{
+  
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    border: 0.1vw solid var(--4);
+    padding: 3%;
+    color: var (--0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
 .list{
     list-style-type: none;
     padding: 0;
@@ -35,33 +50,6 @@
     filter: sepia(0.3);
 }
 
-.circle2{
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    transform: translateY(300vh) translateX(-20vw);
-    width: 70vw; /* Set the circle's width and height to match the image's dimensions */
-    height: 100vh;
-    border-radius: 35vw 35vw 0 0;
-    background-color: var(--2); /* Adjust the background color and transparency */
-    z-index: -1; /* Push the circle behind the image */
-    transition: 1s;
-
-}
-.circle{
-    position: absolute; 
-    transform: translateY(15vw) translateX(78.8vw);
-    top: 0;
-    left: 0;
-    width: 25vw; /* Set the circle's width and height to match the image's dimensions */
-    height: 45vw;
-    border-radius: 40vw 0 0 40vw;
-    background-color: var(--2); /* Adjust the background color and transparency */
-    z-index: -1; /* Push the circle behind the image */
-    transition: 1s;
-
-}
 .expContainer{
     width: 50%;
     margin: auto;
@@ -93,10 +81,16 @@
     .expContainer{
         width: 80vw;
     }
+    .listContainer{
+        width: 80vw;
+    }
     .link{
         font-size: 3vw;
     }
     .description{
+        font-size: 3.5vw;
+    }
+    .stackDescription{
         font-size: 3.5vw;
     }
     .title{
@@ -104,10 +98,6 @@
     }
     .year{
         font-size: 3vw;
-    }
-    .circle2{
-        transform: translateY(145vh);
-        height: 50vh;
     }
     .imgContainer{
         width: 60vw;

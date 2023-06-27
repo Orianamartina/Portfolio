@@ -8,7 +8,11 @@ import { useState } from 'react'
 import {motion, AnimatePresence } from 'framer-motion'
 import Experience from './components/Stack/Experience'
 import Contact from './components/contact/Contact'
-
+import heart from "../../public/heart.png"
+import book from "../../public/open-book.png"
+import home from "../../public/home.png"
+import portfolio from "../../public/portfolio.png"
+import phone from "../../public/phone-call.png"
 
 export default function Main() {
 
@@ -56,11 +60,11 @@ export default function Main() {
   };
 
      const components = [
-        { name: 'Home', id: 'home' },
-        { name: 'About Me', id: 'aboutMe' },
-        { name: 'Projects', id: 'projects' },
-        { name: 'Experience', id: 'experience'},
-        { name: 'Contact', id: 'contact'},
+        { name: 'Home', id: 'home', image:home.src },
+        { name: 'About Me', id: 'aboutMe', image:heart.src },
+        { name: 'Projects', id: 'projects', image: portfolio.src },
+        { name: 'Experience', id: 'experience', image:book.src},
+        { name: 'Contact', id: 'contact', image: phone.src},
       ];
   return (
     <main >

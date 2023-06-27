@@ -119,6 +119,10 @@
         font-size: 2vw;
 
     }
+    .unClickedImg:hover{
+        transform: scale(1);
+        box-shadow: none
+    }   
     .clickedImg{
         width: 35vw;
         height: 30vw;

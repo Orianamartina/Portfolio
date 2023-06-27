@@ -1,17 +1,4 @@
 import style from "./stack.module.css"
-import Image from "next/image"
-import html from "../../../../public/html.png"
-import css from "../../../../public/css.png"
-import javascript from "../../../../public/javascript.png"
-import node from "../../../../public/node.png"
-import python from "../../../../public/python.png"
-import react from "../../../../public/react.png"
-import next from "../../../../public/next.png"
-import redux from "../../../../public/redux.png"
-import sequelize from "../../../../public/sequelize.png"
-import postgres from "../../../../public/postgres.png"
-import git from "../../../../public/git.png"
-import github from "../../../../public/github.png"
 
 
 export default function Experience(){
@@ -20,49 +7,40 @@ export default function Experience(){
         <div className={style.container}>
             
             <h1 className={style.title}>Experience and skills</h1>
-            {/*<div className={style.imgContainer}>
-                <Image className={style.img} src={html} alt="html" />
-                <Image className={style.img} src={css} alt="css" />
-                <Image className={style.img} src={javascript} alt="javascript" />
-                <Image className={style.img} src={node} alt="node" />
-                <Image className={style.img} src={python} alt="python" />
-                <Image className={style.img} src={react} alt="react" />
-                <Image className={style.img} src={next} alt="next" />
-                <Image className={style.img} src={redux} alt="redux" />
-                <Image className={style.img} src={sequelize} alt="sequelize" />
-                <Image className={style.img} src={postgres} alt="postgres" />
-                <Image className={style.img} src={git} alt="git" />
-                <Image className={style.img} src={github} alt="github" />
-               
-            </div> 
-            <div className={style.circle}></div>
-            <div className={style.circle2}></div>*/}
-            <div className={style.expContainer}>
-
-                <h2 className = {style.title} >Languages</h2>
-                <ul className={style.list}>
-                    <li className={style.stackDescription}>Javascript</li>
-                    <li className={style.stackDescription}>Python</li>
-                    <li className={style.stackDescription}>HTML</li>
-                    <li className={style.stackDescription}>CSS</li>
-                </ul>
-               
-                <h2 className = {style.title} >Front - end</h2>
-                <ul className={style.list}>
-                    <li className={style.stackDescription}>React</li>
-                    <li className={style.stackDescription}>NextJs</li>
-                    <li className={style.stackDescription}>Redux</li>
-                    <li className={style.stackDescription}>React-router-dom</li>
-                    <li className={style.stackDescription}>Responsive websites</li>
-                </ul>
-                <h2 className = {style.title} >Back - end</h2>
-                <ul className={style.list}>
-                    <li className={style.stackDescription}>Express</li>
-                    <li className={style.stackDescription}>Django</li>
-                    <li className={style.stackDescription}>JWT</li>
-                    <li className={style.stackDescription}>PostgreSQL</li>
-                    <li className={style.stackDescription}>MySQL</li>
-                </ul>
+            <div className={style.listContainer}>
+                <div>
+                    <h2 className = {style.title} >Languages</h2>
+                    <ul className={style.list}>
+                        <li className={style.stackDescription}>Javascript</li>
+                        <li className={style.stackDescription}>Python</li>
+                        <li className={style.stackDescription}>HTML</li>
+                        <li className={style.stackDescription}>CSS</li>
+                    </ul>
+                </div>
+                
+               <div>
+                    <h2 className = {style.title} >Front - end</h2>
+                    <ul className={style.list}>
+                        <li className={style.stackDescription}>React</li>
+                        <li className={style.stackDescription}>NextJs</li>
+                        <li className={style.stackDescription}>Redux</li>
+                        <li className={style.stackDescription}>React-router-dom</li>
+                        <li className={style.stackDescription}>Responsive websites</li>
+                    </ul>
+               </div>
+                
+                <div>
+                    <h2 className = {style.title} >Back - end</h2>
+                        <ul className={style.list}>
+                            <li className={style.stackDescription}>Express</li>
+                            <li className={style.stackDescription}>Django</li>
+                            <li className={style.stackDescription}>JWT</li>
+                            <li className={style.stackDescription}>PostgreSQL</li>
+                            <li className={style.stackDescription}>MySQL</li>
+                            <li className={style.stackDescription}>Sequelize</li>
+                        </ul>
+                </div>
+                
         
             </div>
             <div className={style.expContainer}>
