@@ -55,6 +55,12 @@
     margin: 0;
 }
 @media (max-width: 1000px){
+    .buttonImage{
+        height: 3vw;
+    }
+    .buttonText{
+        font-size: 3vw;
+    }
     .container{
         height: 5vh;
    
