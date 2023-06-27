@@ -22,9 +22,9 @@ export default function Contact(){
             </button>
             <button className={style.textContainers}>
        
-                <h2  className={style.linkText} >
+                <a  className={style.linkText} href="https://wa.me/+541149896418" target="_blank">
                     <img src={phone.src} className={style.buttonImage} alt="" />   
-                    +54 011 4989 6418</h2>
+                    +54 011 4989 6418</a>
             </button>
             <button className={style.textContainers}>
                 
