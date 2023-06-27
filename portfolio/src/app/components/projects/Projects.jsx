@@ -48,7 +48,7 @@ export default function Projects(){
             <div className={style.circle}></div>
              <div className={style.circle2}></div>
             <h1 className={style.title}>Previous Projects</h1>
-
+            <h3 className={style.subtitle}>Click or tap on project to see info</h3>
             <ProjectCard project = {electroShop}/>
             <ProjectCard project = {dogHub} />
             <ProjectCard project = {sudoku} /> 

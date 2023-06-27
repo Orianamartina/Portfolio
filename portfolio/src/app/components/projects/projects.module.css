@@ -32,6 +32,10 @@
     z-index: -1; /* Push the circle behind the image */
     transition: 1s;
 }
+.subtitle{
+    color: var(--0);
+    font: 1.7vw;
+}
 @media (max-width: 1000px){
     .circle{
         height: 0;
@@ -42,5 +46,8 @@
     }
     .title{
         font-size: 4vw;
+    }
+    .subtitle{
+        font-size: 3.7vw;
     }
 }
