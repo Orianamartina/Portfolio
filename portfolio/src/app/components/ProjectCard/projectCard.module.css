@@ -124,28 +124,24 @@
     .container{
         width:100vw;
     }
+   
     .hiddenInfo, .showInfo{
         width: 35vw;
         font-size: 2vw;
 
     }
-    .unClickedImg:hover{
-        transform: scale(1);
-        box-shadow: none
-    }   
-    .clickedImg{
-        width: 35vw;
-        height: 30vw;
-    }
-    .unClickedImg{
-     
-        width: 70vw;
-        height: 55vw;  
-    }
     .titleAndImage{
-        width: 70vw;
-        transform: translateX(15vw);
-
+        transform:translateX(40%);
+        height: 40vw;
+        width: 40vw;
+    }
+    .titleAndImage:hover{
+        box-shadow: none;
+        transform:translateX(40%);
+    }
+    .titleAndImageClicked{
+        width: 40vw;
+        height: 40vw;
     }
     .title{
         font-size: 4vw;
