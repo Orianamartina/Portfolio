@@ -130,14 +130,20 @@
         font-size: 2vw;
 
     }
+    .hiddenInfo{
+        transform: translateX(-80%);
+    }
+    .showInfo{
+        margin-left: 0%;
+    }
     .titleAndImage{
-        transform:translateX(40%);
+        transform:translateX(50%);
         height: 40vw;
         width: 40vw;
     }
     .titleAndImage:hover{
         box-shadow: none;
-        transform:translateX(40%);
+        transform:translateX(50%);
     }
     .titleAndImageClicked{
         width: 40vw;
