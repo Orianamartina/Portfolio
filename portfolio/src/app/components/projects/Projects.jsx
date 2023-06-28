@@ -2,9 +2,8 @@
 import style from "./projects.module.css"
 
 import dogHub1 from "../../../../public/dog.png"
-
 import electroShop1 from "../../../../public/logo.png"
-import sudoku1 from "../../../../public/sudoku.png"
+import sudoku1 from "../../../../public/sudoku1.png"
 import ProjectCard from "../ProjectCard/ProjectCard"
 
 
