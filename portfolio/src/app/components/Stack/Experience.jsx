@@ -24,7 +24,7 @@ export default function Experience(){
                         <li className={style.stackDescription}>React</li>
                         <li className={style.stackDescription}>NextJs</li>
                         <li className={style.stackDescription}>Redux</li>
-                        <li className={style.stackDescription}>React-router-dom</li>
+                        <li className={style.stackDescription}>TailwindCSS</li>
                         <li className={style.stackDescription}>Responsive websites</li>
                     </ul>
                </div>
@@ -42,6 +42,15 @@ export default function Experience(){
                 </div>
                 
         
+            </div>
+            <div className={style.expContainer}>
+                <h2 className={style.title}>Full-stack developer at <a className={style.link} target="_blank" href="https://www.linkedin.com/company/tecnosapiens-latam/">Tecnosapiens</a></h2>
+                <h3 className={style.year}>Aug - Oct 2023</h3>
+                <h3 className={style.description}>
+                    E-commerce web sites built with React, nextJs, tailwindCSS, nodeJs with client and administrator roles.
+                    Payment services APIS and e-mail notifications.
+                    Agile methodologies with daily meetings and weekly follow-ups
+                </h3>
             </div>
             <div className={style.expContainer}>
                     <h2 className = {style.title} >Henry Bootcamp</h2>

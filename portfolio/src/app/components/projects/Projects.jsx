@@ -8,7 +8,7 @@ import ProjectCard from "../ProjectCard/ProjectCard"
 
 
 export default function Projects(){
-
+    
     const electroShop = {
         img: electroShop1,
         name: "ElectroShop",
