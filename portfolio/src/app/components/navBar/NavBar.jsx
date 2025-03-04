@@ -9,7 +9,7 @@ export default function NavBar(props) {
 
   return (
     <div className={style.container}>
-      {components.map((component) => {
+      {components.map((component, i) => {
         return (
           <>
             <button

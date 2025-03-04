@@ -9,9 +9,9 @@ const LanguagesInformation = () => {
   return (
     <article className={style.languagesInformation}>
       <h2 className={style.languagesTitle}>Languages</h2>
-      {languages.map((l) => {
+      {languages.map((l, i) => {
         return (
-          <div className={style.progressBar}>
+          <div className={style.progressBar} key={i}>
             <h3>{l.language}</h3>
             <div className={style.barContainer}>
               <div className={style.progressBarBackground}></div>

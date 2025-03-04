@@ -40,8 +40,12 @@ export default function Experience() {
       <div className={style.display}>
         <div></div>
         <div className={style.techList}>
-          {techList.map((tech) => {
-            return <div className={style.techItem}>{tech}</div>;
+          {techList.map((tech, i) => {
+            return (
+              <div className={style.techItem} key={i}>
+                {tech}
+              </div>
+            );
           })}
         </div>
       </div>
@@ -56,20 +60,20 @@ export default function Experience() {
           <h3 className={style.experienceTitle}>Experience</h3>
           {experience.map((ex, i) => {
             return (
-              <div className={style.experience}>
+              <div className={style.experience} key={i}>
                 <div className={style.experienceDiv}>
                   <h4>{ex.name}</h4> <small>{ex.date}</small>
                 </div>
                 <p>{ex.description}</p>
-                {ex.projects.map((proj) => {
+                {ex.projects.map((proj, i) => {
                   return (
-                    <div style={{ marginBottom: "32px" }}>
+                    <div style={{ marginBottom: "32px" }} key={i}>
                       <h5>{proj.name}</h5>
                       <p>{proj.description}</p>
 
                       <ul>
-                        {proj.items.map((item) => {
-                          return <li>{item}</li>;
+                        {proj.items.map((item, i) => {
+                          return <li key={i}>{item}</li>;
                         })}
                       </ul>
                       <div
@@ -80,8 +84,10 @@ export default function Experience() {
                           flexWrap: "wrap",
                         }}
                       >
-                        {proj.technologies.map((t) => (
-                          <small className={style.techItem}>{t}</small>
+                        {proj.technologies.map((t, i) => (
+                          <small key={i} className={style.techItem}>
+                            {t}
+                          </small>
                         ))}
                       </div>
                     </div>
