@@ -24,9 +24,7 @@ export default function Home() {
             <h2 className={style.subtitle}>Full-stack developer</h2>
             <a
               className={style.downloadButton}
-              download={true}
-              href="/ORIANA PETTINELLI cv INGLES.pdf"
-              target="_blank"
+              // download={true} target="_blank"
             >
               Download Resume
             </a>
