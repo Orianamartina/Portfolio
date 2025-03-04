@@ -1,0 +1,41 @@
+.educationContainer{
+    width: 70%;
+    padding: 16px;
+    border: 2px dashed var(--1);
+    /* background-color: var(--4); */
+    border-radius: 16px;
+    margin: 64px auto;
+    position:relative;
+    text-align: right;
+}
+.educationContainer h3{
+    position: absolute;
+    padding: 8px;
+    background-color: var(--0);
+    color: var(--3);
+    border-radius: 8px;
+    font-size: 18px;
+    top: -40px;
+    font-weight: lighter;
+    
+}
+.educationItem{
+    padding: 16px;
+}
+.educationItem h4{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+.educationItem h5{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--1);
+}
+@media (max-width: 930px){
+    .educationContainer{
+        width: 90%;
+    }
+
+}

@@ -1,8 +1,11 @@
+import { useState } from "react";
 import style from "./navBar.module.css";
 export default function NavBar(props) {
   const selectedComponent = props.selectedComponent;
   const components = props.components;
   //technology stack, contact
+
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <div className={style.container}>
@@ -10,17 +13,18 @@ export default function NavBar(props) {
         return (
           <>
             <button
-              className={
+              className={`${style.navButton} ${
                 selectedComponent === component.id
                   ? style.active
                   : style.notActive
               }
+              `}
               onClick={() => props.handleComponentClick(component.id)}
               key={component.id}
             >
               {component.image}
               {/* <img src={component.image} className={style.buttonImage}></img> */}
-              <h1 className={style.buttonText}>{component.name}</h1>
+              <p>{component.name}</p>
             </button>
           </>
         );

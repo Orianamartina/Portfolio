@@ -1,39 +1,40 @@
 
 .container{
-    width: 85%;
+    width: fit-content;
     margin: auto;
     display: flex;
-    justify-content: space-evenly;
-    height: 10vh;
-    margin-bottom: 2%;
+    gap: 15px;
+    padding: 20px;
+    margin-top:20px;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    /* border: 1px solid var(--4); */
+
   
 }
-.active{
-  
-    font-size: 1.3vw;
-    margin: 1%;
-    padding: 1%;
-    background-color: var(--4);
-
+.navButton{
+    padding: 15px;
     border: none;
     border-radius: 10px;
     color: var(--0);
     font-weight: 700;
     height: min-content;
-    transition:0.5s;
-    
-    
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+}
+.navButton p{
+    margin: 0;
+    font-size: 16px;
+}
+.active{
+    background-color: var(--4);
+    transition:0.5s;    
 }
 
 .notActive{
     background-color: var(--3);
-    border: none;
-    margin: 1%;
-    padding: 1%;
-  
-    color: var(--0);
-    height: min-content;
-    border-radius: 10px;
     transition: 0.5s;
 
 }
@@ -43,32 +44,21 @@
     background-color: var(--4);
   
 }
-.buttonImage{
-    height: 1.3vw;
-    margin-right: 2%;
 
-
-}
-.buttonText{
-    
-    font-size: 1.3vw;
-    margin: 0;
-}
 @media (max-width: 1000px){
-    .buttonImage{
-        height: 3vw;
-    }
-    .buttonText{
-        font-size: 3vw;
-    }
     .container{
-        height: 5vh;
-   
+        padding: 8px;
     }
-    .notActive{
-        font-size: 3vw;
+    .navButton{
+        padding: 8px;
+        flex-direction: column;
     }
-    .active{
-        font-size: 3vw;
+    .navButton p{
+        font-size: 10px;
+    }
+    .navButtonTextHidden{
+        width: 0px;
+        display: none;
+        transition: 1s;
     }
 }

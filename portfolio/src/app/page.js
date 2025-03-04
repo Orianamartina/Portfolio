@@ -1,23 +1,25 @@
 "use client";
 import style from "./page.module.css";
 import NavBar from "./components/navBar/NavBar";
-import { useState, Suspense, lazy } from "react";
+import { useState, lazy, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import heart from "../../public/heart.png";
-import book from "../../public/open-book.png";
-import home from "../../public/home.png";
-import portfolio from "../../public/portfolio.png";
-import phone from "../../public/phone-call.png";
 import { HomeIcon } from "./components/Icons/HomeIcon";
-
+import { BriefCaseIcon } from "./components/Icons/BriefCaseIcon";
+import { BookIcon } from "./components/Icons/BookIcon";
+import { PhoneIcon } from "./components/Icons/PhoneIcon";
 const Home = lazy(() => import("./components/home/Home"));
-const AboutMe = lazy(() => import("./components/about me/AboutMe"));
 const Projects = lazy(() => import("./components/projects/Projects"));
 const Experience = lazy(() => import("./components/Stack/Experience"));
 const Contact = lazy(() => import("./components/contact/Contact"));
 
 export default function Main() {
   const [selectedComponent, setSelectedComponent] = useState("home");
+  const [showComponent, setShowComponent] = useState();
+  const [currentComponent, setCurrentComponent] = useState();
+  useEffect(() => {
+    setCurrentComponent(components.find((c) => c.id == selectedComponent));
+    setShowComponent(renderComponent(selectedComponent));
+  }, [selectedComponent]);
 
   const handleComponentClick = (componentId) => {
     setSelectedComponent(componentId);
@@ -26,15 +28,12 @@ export default function Main() {
   const transitionVariants = {
     enter: {
       x: 50,
+      // opacity: 1,
       overflow: "hidden",
     },
     center: {
-      opacity: 1,
       x: 0,
-    },
-    exit: {
-      opacity: 0,
-      x: -50,
+      // opacity: 1,
     },
   };
 
@@ -42,8 +41,6 @@ export default function Main() {
     switch (componentId) {
       case "home":
         return <Home />;
-      case "aboutMe":
-        return <AboutMe />;
       case "projects":
         return <Projects />;
       case "experience":
@@ -56,12 +53,12 @@ export default function Main() {
   };
 
   const components = [
-    { name: "Home", id: "home", image: <HomeIcon fill={"#000"} /> },
-    { name: "About Me", id: "aboutMe", image: heart.src },
-    { name: "Projects", id: "projects", image: portfolio.src },
-    { name: "Experience", id: "experience", image: book.src },
-    { name: "Contact", id: "contact", image: phone.src },
+    { name: "Home", id: "home", image: <HomeIcon /> },
+    { name: "Experience", id: "experience", image: <BookIcon /> },
+    { name: "Projects", id: "projects", image: <BriefCaseIcon /> },
+    { name: "Contact", id: "contact", image: <PhoneIcon /> },
   ];
+
   return (
     <main>
       <NavBar
@@ -69,26 +66,24 @@ export default function Main() {
         selectedComponent={selectedComponent}
         components={components}
       />
-      <AnimatePresence>
-        {components.map((component) => (
+      {currentComponent && (
+        <AnimatePresence>
           <motion.div
-            key={component.id}
+            key={currentComponent.id}
             variants={transitionVariants}
             initial="enter"
-            animate={selectedComponent === component.id ? "center" : "exit"}
+            animate={
+              selectedComponent === currentComponent.id ? "center" : "exit"
+            }
             exit="exit"
             onExitComplete={() => window.scrollTo(0, 0)}
             className={style.motionDiv}
             transition={{ duration: 1 }}
           >
-            {selectedComponent === component.id && (
-              <Suspense fallback={<div>Loading...</div>}>
-                {renderComponent(component.id)}
-              </Suspense>
-            )}
+            {showComponent}
           </motion.div>
-        ))}
-      </AnimatePresence>
+        </AnimatePresence>
+      )}
     </main>
   );
 }

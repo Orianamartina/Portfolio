@@ -1,110 +1,283 @@
-.container{
-    width: 100%;
-    margin-bottom: 5%;
-}
-.stackDescription{
-    text-align: center;
-    font-weight: lighter;
-    text-decoration: none;
-
-}
-.listContainer{
-  
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    margin-top: 5%;
-    border: 0.1vw solid var(--4);
-    padding: 3%;
-    color: var (--0);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
-.list{
-    list-style-type: none;
-    padding: 0;
-}
-.title{
-    text-align: center;
-    color: var(--0);
-    font-size: 1.5vw;
-}
-.imgContainer{
-    margin: auto;
-    width: 50%;
-    margin-top: 5%;
-    margin-bottom: 2%;
-}
-.bigImgContainer{
+.container {
+    width: 60vw;
+    padding: 16px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-.img{
-    width: 4vw;
-    height: 4vw;
-    filter: sepia(0.3);
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: var(--0);
 }
 
-.expContainer{
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    margin-top: 5%;
-    border: 0.1vw solid var(--4);
-    padding: 3%;
-    color: var (--0);
-    border-radius: 10px;
+.backgroundCircle, .midCircle {
+    width:100%;
+    left: 0;
+    right: 0;
 }
-.year{
-    font-size: 1vw;
+
+.backgroundCircle {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: var(--4);
+    height: 400px;
+    position: absolute;
+    z-index: -1;
 }
-.description{
-    font-weight: lighter;
-    font-size: 1.4vw;
+
+.midCircle {
+    height: 400px;
+    border-radius: 50%;
+    top: 250px;
+    background-color: var(--3);
+    position: absolute;
+    z-index: -1;
+}
+.display{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.header{
+    padding-top: 40px;
+}
+.linkIcons{
+    height: 30px;
+}
+.paragraph{
+    color: var(--0);
     text-align: justify;
 }
-.link{
-    text-decoration: none;
+.profileImageContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.profileImage{
+    margin: auto;
+    height: inherit;
+    object-fit: cover;
+    position: inherit;
+    width: 60%;
+    border: 2px dashed var(--1);
+    padding: 6px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    z-index: 10;
+
+}
+.verticalLine{
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    background-color: var(--2);
+    bottom: -70%;
+}
+.verticalLine1{
+    left: 30%;
+}
+.verticalLine2{
+    right: 30%;
+}
+.roleTitle{
+    position: absolute;
+    top: 105%;
+    z-index: 12;
+    background-color: var(--1);
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--3);
+}
+.linksContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    padding: 0 0 10px 0;
+}
+.headerInfoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerInfo{
+    display:flex;
     color: var(--0);
-    cursor: pointer;
-    font-weight: bolder;
+    gap: 16px;
+    width: 100%;
 }
-.link:hover{
-    text-decoration: underline;
+.techList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border-bottom: 2px dashed var(--1);
+    padding-bottom: 20px;
 }
-@media (max-width: 1000px){
-    .expContainer{
-        width: 80vw;
+.techItem{
+    width: fit-content;
+    background-color: var(--2);
+    padding: 5px;
+}
+.contactCard{
+    background-color: var(--2);
+    width: fit-content;
+    height: fit-content;
+    padding: 16px;
+    margin: 0 auto;
+    transform: translateY(-40px);
+    width: 60%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+.contactCardIcon{
+    height: 16px;
+    width: 16px;
+    fill: var(--0);
+}
+.lineBreak{
+    width: 102%;
+    height: 3px;
+    background-color: var(--3);
+    padding: 0 16px;
+    transform: translateX(-19px);
+    margin-bottom: 8px;
+}
+.contactIconItem{
+    padding: 4px 0;
+    display: flex;
+    align-items: center;
+    color: var(--0);
+    gap: 2px;
+}
+.paragraph{
+    padding-right: 20px;
+}
+.contactCardMobile{
+    display: none;
+}
+.experienceTitle{
+    width: fit-content;
+    margin-bottom: 16px;
+    color: var(--1);
+    font-size: 24px;
+    
+}
+.experienceDiv{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--1);
+    align-items: center;
+
+}
+.experience{
+    margin-bottom: 32px;
+}
+.experience h4{
+    font: bold;
+    font-size: 20px;
+    margin: 8px;
+}
+.experience h5{
+    font-size: 16px;
+    margin: 0;
+}
+.experience p {
+    font-size: 14px;   
+}
+.experience li{
+    font-size: 14px;
+}
+
+@media (max-width: 1600px){
+    .container{
+        width: 90vw;
     }
-    .listContainer{
-        width: 80vw;
+    .verticalLine{
+        height: 100%;
     }
-    .link{
-        font-size: 3vw;
+    .profileImage{
+        max-width: 13vw;
     }
-    .description{
-        font-size: 3.5vw;
+ 
+
+}
+@media (max-width: 1024px){
+    .container{
+        width: 90vw;
     }
-    .stackDescription{
-        font-size: 3.5vw;
+    .contactCard{
+        width: 80%;
+        transform: translateY(-100px);
     }
-    .title{
-        font-size: 4vw;
+    .profileImage{
+        max-width: 30vw;
     }
-    .year{
-        font-size: 3vw;
+    .contactCard{
+        transform: translateY(-80px);
+
     }
-    .imgContainer{
+}
+@media (max-width: 930px){
+    .display{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .midCircle{
+        width: 100vw;
+        left: -20vw;
+    }
+    .container{
         width: 60vw;
-     
     }
-    .img{
-        width: 5vw;
-        height: 5vw;
+    .backgroundCircle{
+        width: 100%;
     }
+    .headerInfo{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contactCardMobile{
+        display: block;
+        margin-top: 44%;
+    }
+    .contactCardDesktop{
+        display: none;
+    }
+    .contactCard{
+        width: 80%;
+        transform: translateY(-50px);
+    }
+    .linksContainer{
+        margin: auto;
+    }
+    .paragraph{
+        padding: 0;
+    }
+    .profileImage{
+        max-width: 28vw;
+    }
+
+}
+
+@media (max-width: 500px){
+    .container{
+        width: 80vw;
+    }
+    .profileImage{
+        max-width: 60vw;
+    }
+    .midCircle{
+        width: 100vw;
+        left: -10vw;
+    }
+
 }
