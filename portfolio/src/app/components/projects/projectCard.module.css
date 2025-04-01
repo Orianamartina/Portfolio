@@ -1,0 +1,90 @@
+.projectCard{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-image: url("../../../../public/squaredsheet.jpg");
+    background-size: 70%;
+    padding: 24px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.projectCardTitle{
+    position: relative;
+    height: fit;
+    margin: 0;
+    padding: 0;    
+    text-align: right;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 100%;
+    font-size: 28px;
+}
+
+.projectCardTitle::before{
+    content: "";
+    position: absolute;
+    top: 37%; /* Starts from 25% down */
+    left: 0;
+    width: 100%;
+    height: 25%; /* Covers only the middle 50% */
+    background: var(--2);
+    z-index: -1; /* Moves behind the text */
+}
+.projectImage{
+    padding: 10px;
+    border: 1px solid var(--1);
+    border-radius: 10px;
+    width: 25%;
+    height: fit-content;
+}
+.projectCardDescription{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+}
+.projectCardDescription p {
+    text-align: justify;
+    line-height: 24px;
+}
+.left{
+    flex-direction: row-reverse;
+}
+.techContainer{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.urls{
+    display: flex;
+    gap: 16px;
+    justify-content: right;
+}
+.urls a{
+    text-decoration: none;
+    color: var(--0);
+}
+.techItem{
+    height: fit-content;
+    padding: 5px;
+    font-size: 14px;
+    width: fit-content;
+}
+
+@media (max-width: 1000px){
+    .projectCard{
+        width: 80%;
+        background-size: 110%;
+    }
+    .projectCardTitle{
+        font-size: 24px;
+    }
+    .projectCardDescription p{
+        font-size: 13px;
+    }
+    .techItem{
+        font-size: 12px;
+    }
+}

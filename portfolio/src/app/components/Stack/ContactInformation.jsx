@@ -2,6 +2,8 @@ import { LinkedinIcon } from "../Icons/LinkedinIcon";
 import { GithubIcon } from "../Icons/GithubIcon";
 import { GitlabIcon } from "../Icons/GitlabIcon";
 import { LocationIcon } from "../Icons/LocationIcon";
+import { EnvelopeIcon } from "../Icons/EnvelopeIcon";
+import { PhoneIcon } from "../Icons/PhoneIcon";
 const ContactInformation = ({ isMobile = false, style }) => {
   return (
     <article
@@ -32,11 +34,11 @@ const ContactInformation = ({ isMobile = false, style }) => {
             <small>Argentina</small>
           </div>
           <div className={style.contactIconItem}>
-            <LocationIcon className={style.contactCardIcon} />
+            <EnvelopeIcon className={style.contactCardIcon} />
             <small>orianapettinelli1@gmail.com</small>
           </div>
           <div className={style.contactIconItem}>
-            <LocationIcon className={style.contactCardIcon} />
+            <PhoneIcon className={style.contactCardIcon} />
             <small>+54 011 49896418</small>
           </div>
         </div>

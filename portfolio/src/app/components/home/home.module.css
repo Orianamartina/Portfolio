@@ -111,6 +111,38 @@
     gap: 20px;
     justify-content: center;
 }
+.copyMailContainer{
+    position: relative;
+}
+.copyMail{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    gap: 12px;
+    font-size: 14px;
+    background-color: var(--1);
+    border-radius: 10px;
+    padding: 10px;
+}
+.copyMail p{
+    margin: 0;
+    color: var(--3);
+}
+.copyMailIcon{
+    width: 18px;
+    cursor: pointer;
+}
+.copyMail::after {
+    content: "";
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid var(--1);
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+
 
 
 @media (max-width: 1200px){
