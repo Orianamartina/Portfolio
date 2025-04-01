@@ -40,8 +40,12 @@ export default function Experience() {
       <div className={style.display}>
         <div></div>
         <div className={style.techList}>
-          {techList.map((tech) => {
-            return <div className="techItem">{tech}</div>;
+          {techList.map((tech, i) => {
+            return (
+              <div className="techItem" key={i}>
+                {tech}
+              </div>
+            );
           })}
         </div>
       </div>
