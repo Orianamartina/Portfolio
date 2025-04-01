@@ -67,13 +67,13 @@ export default function Experience() {
                 <p>{ex.description}</p>
                 {ex.projects.map((proj) => {
                   return (
-                    <div style={{ marginBottom: "32px" }}>
+                    <div style={{ marginBottom: "32px" }} key={proj.name}>
                       <h5>{proj.name}</h5>
                       <p>{proj.description}</p>
 
                       <ul>
                         {proj.items.map((item) => {
-                          return <li>{item}</li>;
+                          return <li key={item}>{item}</li>;
                         })}
                       </ul>
                       <div
