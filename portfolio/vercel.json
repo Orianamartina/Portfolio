@@ -1,8 +1,9 @@
 {
     "rewrites": [
       {
-        "source": "/sudoku(.*)",
-        "destination": "https://sudoku-prueba.vercel.app/"
+        "source": "/sudoku/:path*",
+        "destination": "https://sudoku-prueba.vercel.app/:path*"
       }
     ]
   }
+  
