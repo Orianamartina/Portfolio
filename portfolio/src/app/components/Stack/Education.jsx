@@ -6,7 +6,7 @@ const Education = () => {
       <h3 className={style.educationTitle}>Education</h3>
       {educationItems.map((ed, i) => {
         return (
-          <div className={style.educationItem} key={i}>
+          <div className={style.educationItem} key={ed.name}>
             <h4>{ed.name}</h4>
             <h5>{ed.place}</h5>
             <small>{ed.date}</small>

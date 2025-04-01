@@ -42,7 +42,7 @@ export default function Experience() {
         <div className={style.techList}>
           {techList.map((tech, i) => {
             return (
-              <div className={style.techItem} key={i}>
+              <div className="techItem" key={i}>
                 {tech}
               </div>
             );
@@ -67,13 +67,13 @@ export default function Experience() {
                 <p>{ex.description}</p>
                 {ex.projects.map((proj, i) => {
                   return (
-                    <div style={{ marginBottom: "32px" }} key={i}>
+                    <div style={{ marginBottom: "32px" }} key={proj.name}>
                       <h5>{proj.name}</h5>
                       <p>{proj.description}</p>
 
                       <ul>
-                        {proj.items.map((item, i) => {
-                          return <li key={i}>{item}</li>;
+                        {proj.items.map((item) => {
+                          return <li key={item}>{item}</li>;
                         })}
                       </ul>
                       <div
@@ -85,7 +85,7 @@ export default function Experience() {
                         }}
                       >
                         {proj.technologies.map((t, i) => (
-                          <small key={i} className={style.techItem}>
+                          <small className={style.techItem} key={i}>
                             {t}
                           </small>
                         ))}

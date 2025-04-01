@@ -11,7 +11,7 @@ const LanguagesInformation = () => {
       <h2 className={style.languagesTitle}>Languages</h2>
       {languages.map((l, i) => {
         return (
-          <div className={style.progressBar} key={i}>
+          <div className={style.progressBar} key={l.language}>
             <h3>{l.language}</h3>
             <div className={style.barContainer}>
               <div className={style.progressBarBackground}></div>

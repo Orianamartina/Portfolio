@@ -3,9 +3,20 @@ import img from "../../../../public/oriana2.jpg";
 import Image from "next/image";
 import { LinkedinIcon } from "../Icons/LinkedinIcon";
 import { GithubIcon } from "../Icons/GithubIcon";
+import { CopyIcon } from "../Icons/CopyIcon";
 import { GitlabIcon } from "../Icons/GitlabIcon";
+import { EnvelopeIcon } from "../Icons/EnvelopeIcon";
+import { useState } from "react";
 
 export default function Home() {
+  const [mail, setMail] = useState(false);
+  const showMail = () => {
+    setMail(!mail);
+  };
+
+  const handleCopy = async () => {
+    await window.navigator.clipboard.writeText("orianapettinelli1@gmail.com");
+  };
   return (
     <div
       style={{
@@ -41,6 +52,22 @@ export default function Home() {
               <a href="https://gitlab.com/Orianamartina" target="_blank">
                 <GitlabIcon />
               </a>
+              <div className={style.copyMailContainer}>
+                <div onClick={showMail}>
+                  <EnvelopeIcon style={{ cursor: "pointer" }} />
+                </div>
+                {mail && (
+                  <div className={style.copyMail}>
+                    <p>orianapettinelli1@gmail.com</p>
+                    <div onClick={handleCopy}>
+                      <CopyIcon
+                        className={style.copyMailIcon}
+                        fill="var(--3)"
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
           <div className={style.profileImageContainer}>
