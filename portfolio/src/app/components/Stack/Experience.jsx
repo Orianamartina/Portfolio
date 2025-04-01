@@ -60,7 +60,7 @@ export default function Experience() {
           <h3 className={style.experienceTitle}>Experience</h3>
           {experience.map((ex, i) => {
             return (
-              <div className={style.experience}>
+              <div className={style.experience} key={i}>
                 <div className={style.experienceDiv}>
                   <h4>{ex.name}</h4> <small>{ex.date}</small>
                 </div>
@@ -84,8 +84,10 @@ export default function Experience() {
                           flexWrap: "wrap",
                         }}
                       >
-                        {proj.technologies.map((t) => (
-                          <small className={style.techItem}>{t}</small>
+                        {proj.technologies.map((t, i) => (
+                          <small className={style.techItem} key={i}>
+                            {t}
+                          </small>
                         ))}
                       </div>
                     </div>
