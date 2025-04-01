@@ -21,7 +21,7 @@ const flashlingoFront = {
   description:
     "Work in progress - Next.js project designed to evaluate a language learning method centered around active recall and spaced repetition. This is the frontend application to provide with a intuitive and responsive interface to efficiently learn a language's vocabulary",
   image: "",
-  technologies: ["NextJs", "Cypress", "Css"],
+  technologies: ["NextJs", "Typescript", "Cypress", "Css", "Bootstrap"],
 };
 
 const concuMnist = {
@@ -46,6 +46,13 @@ const electroShop = {
     "E-Commerce focused on electronic devices such as computers, tablets, cell-phones as well as accesories. Created as a bootcamp final project with a group of five students using SCRUM methodologies. Made with React and nodeJs",
   url: "https://electroshop-delta.vercel.app",
   repoUrl: "https://github.com/Orianamartina/Electroshop",
+  technologies: ["Javascript", "React", "Express", "Sequelize", "PostgreSQL"],
 };
 
-export const projects = [flashlingoBack, flashlingoFront, concuMnist, sudoku];
+export const projects = [
+  flashlingoBack,
+  flashlingoFront,
+  concuMnist,
+  sudoku,
+  electroShop,
+];

@@ -24,7 +24,7 @@ export default function Experience() {
             <ContactInformation style={style} isMobile={true} />
 
             <div>
-              <h1 className={style.title}>Oriana Pettinelli</h1>
+              <h1 className={`${style.title} cursive`}>Oriana Pettinelli</h1>
             </div>
           </div>
           <p className={style.paragraph}>
@@ -64,11 +64,14 @@ export default function Experience() {
                 <div className={style.experienceDiv}>
                   <h4>{ex.name}</h4> <small>{ex.date}</small>
                 </div>
-                <p>{ex.description}</p>
+                <p style={{ margin: "8px 0" }}>{ex.description}</p>
                 {ex.projects.map((proj, i) => {
                   return (
-                    <div style={{ marginBottom: "32px" }} key={proj.name}>
-                      <h5>{proj.name}</h5>
+                    <div
+                      style={{ marginBottom: "16px", marginTop: "16px" }}
+                      key={proj.name}
+                    >
+                      <h5 style={{ margin: "8px 0" }}>{proj.name}</h5>
                       <p>{proj.description}</p>
 
                       <ul>

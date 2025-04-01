@@ -25,7 +25,10 @@
     position: absolute;
     z-index: -1;
 }
-
+.title{
+    margin-bottom: 10px;  
+    font-size: 42px; 
+}
 .midCircle {
     height: 400px;
     border-radius: 50%;
@@ -164,6 +167,7 @@
 }
 .experienceTitle{
     width: fit-content;
+    margin-top: 16px;
     margin-bottom: 16px;
     color: var(--1);
     font-size: 24px;
@@ -178,7 +182,9 @@
 
 }
 .experience{
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    line-height: 20px;
 }
 .experience h4{
     font: bold;
@@ -210,6 +216,10 @@
 
 }
 @media (max-width: 1024px){
+    .title{
+        margin-bottom: 20px;  
+        font-size: 32px; 
+    }
     .container{
         width: 90vw;
     }
