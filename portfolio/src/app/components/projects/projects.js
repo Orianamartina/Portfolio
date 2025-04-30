@@ -36,7 +36,7 @@ const sudoku = {
   name: "Sudoku",
   description:
     "Sudoku SPA made in React that integrates a sudoku generator. With different interfaces adapting to wider and mobile screens, interactive, keyboard support for wide screens and integrated keyboard for mobile, game state management, different styles depending on the user's preference. Made with React and nodeJs",
-  url: "https://orianita.com.ar/sudoku",
+  url: "https://sudoku.orianita.com.ar",
   technologies: ["React", "Javascript"],
   repoUrl: "https://github.com/Orianamartina/sudoku-prueba",
 };
